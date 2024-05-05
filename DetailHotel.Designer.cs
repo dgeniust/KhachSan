@@ -32,6 +32,7 @@
             this.Panel_DetailRoom = new Guna.UI2.WinForms.Guna2Panel();
             this.Panel_EachRoom = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.uC_DetailHotel1 = new KhachSan.User_Control.UC_DetailHotel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
@@ -61,7 +62,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_HotelName_small = new System.Windows.Forms.Label();
             this.lbl_HotelName = new System.Windows.Forms.Label();
-            this.uC_DetailHotel1 = new KhachSan.User_Control.UC_DetailHotel();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Panel_DetailRoom.SuspendLayout();
             this.Panel_EachRoom.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -80,6 +81,7 @@
             // Panel_DetailRoom
             // 
             this.Panel_DetailRoom.AutoScroll = true;
+            this.Panel_DetailRoom.Controls.Add(this.btn_Exit);
             this.Panel_DetailRoom.Controls.Add(this.Panel_EachRoom);
             this.Panel_DetailRoom.Controls.Add(this.panel3);
             this.Panel_DetailRoom.Controls.Add(this.panel1);
@@ -115,6 +117,13 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1287, 390);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // uC_DetailHotel1
+            // 
+            this.uC_DetailHotel1.Location = new System.Drawing.Point(0, 0);
+            this.uC_DetailHotel1.Name = "uC_DetailHotel1";
+            this.uC_DetailHotel1.Size = new System.Drawing.Size(1284, 390);
+            this.uC_DetailHotel1.TabIndex = 0;
             // 
             // panel3
             // 
@@ -521,12 +530,22 @@
             this.lbl_HotelName.Text = "Davue Hotel Da Nang";
             this.lbl_HotelName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uC_DetailHotel1
+            // btn_Exit
             // 
-            this.uC_DetailHotel1.Location = new System.Drawing.Point(0, 0);
-            this.uC_DetailHotel1.Name = "uC_DetailHotel1";
-            this.uC_DetailHotel1.Size = new System.Drawing.Size(1284, 390);
-            this.uC_DetailHotel1.TabIndex = 0;
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.Red;
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Location = new System.Drawing.Point(1325, 3);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
+            this.btn_Exit.TabIndex = 13;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // DetailHotel
             // 
@@ -592,5 +611,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_HotelName_small;
         private System.Windows.Forms.Label lbl_HotelName;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
     }
 }

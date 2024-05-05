@@ -34,7 +34,7 @@ namespace KhachSan
         public string p4;
         public string p5;
         public string p6;
-
+        public string uudai;
         public Hotel(DataRow dr)
         {
             this.email = dr[0].ToString(); 
@@ -59,9 +59,10 @@ namespace KhachSan
             this.p4 = dr[19].ToString();
             this.p5 = dr[20].ToString();
             this.p6 = dr[21].ToString();
+            this.uudai = dr[22].ToString();
         }
 
-        public Hotel(string email, string id, string name, string address, string type, string detailaddress, string star, double price, double oldprice, string rate, string tienich1, string tienich2, string tienich3, string phone, string mota, string picture, string p1, string p2, string p3, string p4, string p5, string p6)
+        public Hotel(string email, string id, string name, string address, string type, string detailaddress, string star, double price, double oldprice, string rate, string tienich1, string tienich2, string tienich3, string phone, string mota, string picture, string p1, string p2, string p3, string p4, string p5, string p6, string uudai)
         {
             this.email = email;
             this.id = id;
@@ -85,6 +86,7 @@ namespace KhachSan
             this.p4 = p4;
             this.p5 = p5;
             this.p6 = p6;
+            this.uudai = uudai;
         }
     }
 }

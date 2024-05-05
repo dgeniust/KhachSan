@@ -17,7 +17,7 @@ namespace KhachSan.User_Control
         public UC_MyBook(DatPhong DP)
         {
             InitializeComponent();
-            string info = DP.guest + " khách, " + DP.giuong + DP.sodem + " đêm";
+            string info = DP.guest + " khách, " + DP.giuong +" "+ DP.sodem + " đêm";
             this.dp = DP;
             //this.pictureBox_Room.Image = dpDAO.LoadImageFromFile(DP.image);
             this.lbl_HotelName.Text = DP.hotelname;

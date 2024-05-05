@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace KhachSan
     {
         Hotel hotel;
         RoomDAO roomDAO = new RoomDAO();
+        Search sr;
         private List<PictureBox> pictureBoxes = new List<PictureBox>(); 
         string imageLocation = "";
         public FAddRoom()
@@ -29,8 +31,11 @@ namespace KhachSan
         }
         private void btn_AddRoom_Click(object sender, EventArgs e)
         {
-            Room room = new Room(hotel.email,hotel.name,txt_RoomName.Text, txt_DienTich.Text, txt_Bed.Text, txt_Guest.Text,0, Convert.ToDouble(txt_Price.Text),txt_TienIch1.Text,txt_TienIch2.Text, txt_TienIch3.Text, pictureBox1.ImageLocation, pictureBox4.ImageLocation, pictureBox2.ImageLocation, pictureBox3.ImageLocation);
+            Room room = new Room(hotel.email,hotel.name,txt_RoomName.Text, txt_DienTich.Text, txt_Bed.Text, txt_Guest.Text,0, Convert.ToDouble(txt_Price.Text),txt_TienIch1.Text,txt_TienIch2.Text, txt_TienIch3.Text,txt_TienIch4.Text,txt_DoDung1.Text, txt_DoDung2.Text, pictureBox1.ImageLocation, pictureBox4.ImageLocation, pictureBox2.ImageLocation, pictureBox3.ImageLocation);
             roomDAO.Add(room);
+            string query = "SELECT * FROM PHONG WHERE TenKhachSan= '" + hotel.name + "'";
+            roomDAO.GeneratePanel(query, Panel_Hotel, sr);
+            this.Refresh();
         }
 
         private void btn_UploadImage_Click(object sender, EventArgs e)
@@ -40,6 +45,15 @@ namespace KhachSan
             pictureBoxes.Add(pictureBox3);
             pictureBoxes.Add(pictureBox4);
             roomDAO.GeneratePicture(imageLocation, pictureBoxes);
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void FAddRoom_Load(object sender, EventArgs e)
+        {
 
         }
     }

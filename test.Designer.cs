@@ -28,79 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_Receive = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_Content = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // splitContainer1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 151);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Người nhận";
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // txt_Receive
+            // splitContainer1.Panel1
             // 
-            this.txt_Receive.Location = new System.Drawing.Point(192, 151);
-            this.txt_Receive.Name = "txt_Receive";
-            this.txt_Receive.Size = new System.Drawing.Size(423, 22);
-            this.txt_Receive.TabIndex = 1;
+            this.splitContainer1.Panel1.Controls.Add(this.btn_Search);
+            this.splitContainer1.Panel1.Controls.Add(this.txt_Search);
             // 
-            // label4
+            // splitContainer1.Panel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(110, 224);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 16);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Content";
+            this.splitContainer1.Panel2.Controls.Add(this.webBrowser1);
+            this.splitContainer1.Size = new System.Drawing.Size(766, 566);
+            this.splitContainer1.SplitterDistance = 255;
+            this.splitContainer1.TabIndex = 0;
             // 
-            // txt_Content
+            // webBrowser1
             // 
-            this.txt_Content.Location = new System.Drawing.Point(192, 224);
-            this.txt_Content.Name = "txt_Content";
-            this.txt_Content.Size = new System.Drawing.Size(423, 208);
-            this.txt_Content.TabIndex = 2;
-            this.txt_Content.Text = "";
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(507, 566);
+            this.webBrowser1.TabIndex = 0;
             // 
-            // button1
+            // txt_Search
             // 
-            this.button1.Location = new System.Drawing.Point(331, 508);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Gửi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txt_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Search.DefaultText = "";
+            this.txt_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Search.Location = new System.Drawing.Point(12, 13);
+            this.txt_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.PasswordChar = '\0';
+            this.txt_Search.PlaceholderText = "";
+            this.txt_Search.SelectedText = "";
+            this.txt_Search.Size = new System.Drawing.Size(229, 48);
+            this.txt_Search.TabIndex = 0;
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Search.ForeColor = System.Drawing.Color.White;
+            this.btn_Search.Location = new System.Drawing.Point(37, 81);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(180, 45);
+            this.btn_Search.TabIndex = 1;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 566);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_Content);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt_Receive);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "test";
             this.Text = "test";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_Receive;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox txt_Content;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Search;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private Guna.UI2.WinForms.Guna2Button btn_Search;
     }
 }

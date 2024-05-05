@@ -40,6 +40,7 @@
             this.btn_TypeOf = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Rate = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox_Hotel = new System.Windows.Forms.PictureBox();
+            this.btn_Edition = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hotel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,12 +179,29 @@
             this.pictureBox_Hotel.TabIndex = 0;
             this.pictureBox_Hotel.TabStop = false;
             // 
+            // btn_Edition
+            // 
+            this.btn_Edition.AnimatedGIF = true;
+            this.btn_Edition.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Edition.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Edition.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Edition.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Edition.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Edition.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Edition.ForeColor = System.Drawing.Color.White;
+            this.btn_Edition.Location = new System.Drawing.Point(13, 91);
+            this.btn_Edition.Name = "btn_Edition";
+            this.btn_Edition.Size = new System.Drawing.Size(198, 25);
+            this.btn_Edition.TabIndex = 9;
+            this.btn_Edition.Text = "Sale sinh nhật";
+            // 
             // UC_Hotel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.btn_Edition);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btn_TienIch2);
             this.Controls.Add(this.btn_TienIch1);
@@ -198,6 +216,7 @@
             this.Controls.Add(this.pictureBox_Hotel);
             this.Name = "UC_Hotel";
             this.Size = new System.Drawing.Size(908, 148);
+            this.Click += new System.EventHandler(this.UC_Hotel_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hotel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -218,5 +237,6 @@
         private System.Windows.Forms.Button btn_TienIch1;
         private System.Windows.Forms.Button btn_TienIch2;
         private System.Windows.Forms.Button button3;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_Edition;
     }
 }

@@ -31,9 +31,9 @@ namespace KhachSan
             this.txt_Phone.Text = TAIKHOAN.sdt;
             //this.datetime_NgaySinh.Value = Convert.ToDateTime(TAIKHOAN.ngaysinh);
             this.cmb_Gender.Text = TAIKHOAN.gioitinh;
-            this.pictureBox_OwnerImage.Image = htDAO.LoadImageFromFile(TAIKHOAN.ownerimage);
+            /*this.pictureBox_OwnerImage.Image = htDAO.LoadImageFromFile(TAIKHOAN.ownerimage);
             this.pictureBox_Front_CCCD.Image = htDAO.LoadImageFromFile(TAIKHOAN.frontcccd);
-            this.pictureBox_Back_CCCD.Image = htDAO.LoadImageFromFile(TAIKHOAN.backcccd);
+            this.pictureBox_Back_CCCD.Image = htDAO.LoadImageFromFile(TAIKHOAN.backcccd);*/
 
         }
 

@@ -18,6 +18,7 @@ namespace KhachSan
         Hotel ht;
         Search sr;
         HotelDAO htDAO = new HotelDAO();
+        RoomDAO roomDAO = new RoomDAO();
         public DetailHotel()
         {
             InitializeComponent();
@@ -32,9 +33,10 @@ namespace KhachSan
         private void DetailHotel_Load(object sender, EventArgs e)
         {
             this.lbl_HotelName.Text = lbl_HotelName_small.Text = ht.name;
-            this.lbl_Price.Text = Convert.ToString(ht.price);
+            this.lbl_Price.Text = Convert.ToString(ht.price) + " VND";
             this.btn_TypeOf.Text = ht.type;
             this.btn_Address.Text = ht.detailaddress;
+            this.lbl_Desc.Text = ht.mota;
             this.pictureBox1.Image = htDAO.LoadImageFromFile(ht.p1);
             this.pictureBox2.Image = htDAO.LoadImageFromFile(ht.p2);
             this.pictureBox3.Image = htDAO.LoadImageFromFile(ht.p3);
@@ -42,7 +44,7 @@ namespace KhachSan
             this.pictureBox5.Image = htDAO.LoadImageFromFile(ht.p5);
             this.pictureBox6.Image = htDAO.LoadImageFromFile(ht.p6);
 
-            Panel_EachRoom.Controls.Clear();
+            /*Panel_EachRoom.Controls.Clear();
             string query = "SELECT * FROM PHONG WHERE TenKhachSan= '" + ht.name + "'";
             DataTable dt = new DataTable();
             dt = db.LoadData(query);
@@ -63,7 +65,14 @@ namespace KhachSan
                 panel.Controls.Add(dtht);
                 dtht.Dock = DockStyle.Fill;
                 Panel_EachRoom.Controls.Add(panel);
-            }
+            }*/
+            string query = "SELECT * FROM PHONG WHERE TenKhachSan= '" + ht.name + "'";
+            roomDAO.GeneratePanel(query,Panel_EachRoom,sr);
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

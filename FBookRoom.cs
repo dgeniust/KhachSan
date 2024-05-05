@@ -111,13 +111,35 @@ namespace KhachSan
         }
 
         int p, k, people;
+
+        private void btn_MyHotel_Click(object sender, EventArgs e)
+        {
+            string query = "Select * from khachsan where email ='"+tk.email+"'";
+            FNewHotel fnh = new FNewHotel(tk, query);
+            fnh.Show();
+            if (fnh.TXT_HotelName.Text == "")
+            {
+                MessageBox.Show("Bạn nghèo!");
+                fnh.Close();
+            }
+            else
+            {
+                this.Hide();
+            }
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
         private void btn_Search_Click(object sender, EventArgs e)
         {
             p = Convert.ToInt32(cmb_People.Text);
             k = Convert.ToInt32(cmb_Kid.Text);
             people = p + k;
             //Search sr = new Search(datetimepicker_ReceiveRoom.Value.Date,Convert.ToInt32(cmb_Night.Text), cmb_Location.Text);
-            Search sr = new Search(datetimepicker_ReceiveRoom.Value.Date,Convert.ToDateTime(endday), Convert.ToInt32(cmb_Night.Text), cmb_Location.Text, people);
+            Search sr = new Search(datetimepicker_ReceiveRoom.Value.Date,Convert.ToDateTime(endday), Convert.ToInt32(cmb_Night.Text), cmb_Location.Text, people, Convert.ToInt32(cmb_Room.Text));
             FSearch fs = new FSearch(sr);
             fs.Show();
             this.Hide();

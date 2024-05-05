@@ -36,7 +36,12 @@ namespace KhachSan
         {
             /*string query = string.Format("SELECT * FROM DATPHONG WHERE Email='" + email + "'");*/
             /*string query = string.Format("SELECT * FROM DATPHONG WHERE Email='hdq@gmail.com'");*/
-            dpDAO.GeneratePanel(query,Panel_MyRoom);
+            dpDAO.GenerateBookPanel(query,Panel_MyRoom);
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

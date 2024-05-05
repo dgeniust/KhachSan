@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Panel_DetailHotelPay = new System.Windows.Forms.Panel();
             this.uC_Pay1 = new KhachSan.User_Control.UC_Pay();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -248,6 +249,7 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btn_Exit);
             this.panel1.Controls.Add(this.Panel_DetailHotelPay);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel4);
@@ -265,6 +267,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1282, 654);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.Red;
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Location = new System.Drawing.Point(1213, 3);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
+            this.btn_Exit.TabIndex = 13;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // Panel_DetailHotelPay
             // 
@@ -314,7 +333,7 @@
             this.btn_Pay.Name = "btn_Pay";
             this.btn_Pay.Size = new System.Drawing.Size(667, 45);
             this.btn_Pay.TabIndex = 66;
-            this.btn_Pay.Text = "Tiếp tục thanh toán";
+            this.btn_Pay.Text = "Thanh toán";
             this.btn_Pay.Click += new System.EventHandler(this.btn_Pay_Click);
             // 
             // guna2Separator3
@@ -674,14 +693,14 @@
             this.guna2HtmlLabel1.TabIndex = 47;
             this.guna2HtmlLabel1.Text = "NAME _ APP";
             // 
-            // Pay
+            // FPay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1281, 653);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Pay";
+            this.Name = "FPay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pay";
             this.Load += new System.EventHandler(this.Pay_Load);
@@ -742,5 +761,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
     }
 }

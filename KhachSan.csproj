@@ -120,6 +120,7 @@
       <DependentUpon>FPay.cs</DependentUpon>
     </Compile>
     <Compile Include="HotelDAO.cs" />
+    <Compile Include="ItemDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
@@ -167,6 +168,9 @@
     <Compile Include="User Control\UC_Pay.Designer.cs">
       <DependentUpon>UC_Pay.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetailHotel.resx">
       <DependentUpon>DetailHotel.cs</DependentUpon>
     </EmbeddedResource>

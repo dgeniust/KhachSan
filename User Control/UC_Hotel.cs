@@ -35,12 +35,40 @@ namespace KhachSan.User_Control
             this.btn_TienIch2.Text = HOTEL.tienich2;
             this.btn_TypeOf.Text = HOTEL.type;
             this.pictureBox_Hotel.Image = htDAO.LoadImageFromFile(HOTEL.picture);
+            if(HOTEL.uudai == "Sale sinh nhật")
+            {
+                this.btn_Edition.Text = "Sale sinh nhật";
+            }
+            else if(HOTEL.uudai == "Ưu đãi đặc biệt")
+            {
+                this.btn_Edition.Text = "Ưu đãi đặc biệt";
+            }
+            else
+            {
+                this.btn_Edition.Visible = false;
+            }
             this.search = search;
         }
         private void btn_ChooseRoom_Click(object sender, EventArgs e)
         {
             DetailHotel dh = new DetailHotel(ht, search);
             dh.Show();
+        }
+        string hotelName = "";
+        public void ShowInfo(string hotel)
+        {
+            MessageBox.Show("Tên khách sạn: " + this.lbl_HotelName.Text);
+            hotelName = hotel;
+        }
+
+        /*public void UC_Hotel_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tên khách sạn: " + this.lbl_HotelName.Text);
+        }*/
+
+        public void UC_Hotel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tên khách sạn: " + this.lbl_HotelName.Text);
         }
     }
 }

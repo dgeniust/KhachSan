@@ -30,20 +30,47 @@
         {
             this.components = new System.ComponentModel.Container();
             this.UC_Register = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.Control_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.uC_Login1 = new KhachSan.UC_Login();
+            this.uC_Register1 = new KhachSan.UC_Register();
             this.UC_Login = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Control_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uC_Register1 = new KhachSan.UC_Register();
-            this.uC_Login1 = new KhachSan.UC_Login();
-            this.guna2Panel1.SuspendLayout();
             this.Control_Panel.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // UC_Register
             // 
             this.UC_Register.TargetControl = this.Control_Panel;
+            // 
+            // Control_Panel
+            // 
+            this.Control_Panel.Controls.Add(this.uC_Login1);
+            this.Control_Panel.Controls.Add(this.uC_Register1);
+            this.Control_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Control_Panel.Location = new System.Drawing.Point(595, 0);
+            this.Control_Panel.Name = "Control_Panel";
+            this.Control_Panel.Size = new System.Drawing.Size(715, 620);
+            this.Control_Panel.TabIndex = 2;
+            // 
+            // uC_Login1
+            // 
+            this.uC_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Login1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Login1.Name = "uC_Login1";
+            this.uC_Login1.Size = new System.Drawing.Size(715, 620);
+            this.uC_Login1.TabIndex = 1;
+            this.uC_Login1.Visible = false;
+            // 
+            // uC_Register1
+            // 
+            this.uC_Register1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Register1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Register1.Name = "uC_Register1";
+            this.uC_Register1.Size = new System.Drawing.Size(715, 620);
+            this.uC_Register1.TabIndex = 0;
             // 
             // UC_Login
             // 
@@ -59,16 +86,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(596, 657);
             this.guna2Panel1.TabIndex = 1;
             // 
-            // Control_Panel
-            // 
-            this.Control_Panel.Controls.Add(this.uC_Login1);
-            this.Control_Panel.Controls.Add(this.uC_Register1);
-            this.Control_Panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Control_Panel.Location = new System.Drawing.Point(595, 0);
-            this.Control_Panel.Name = "Control_Panel";
-            this.Control_Panel.Size = new System.Drawing.Size(715, 620);
-            this.Control_Panel.TabIndex = 2;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -79,25 +96,9 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // uC_Register1
-            // 
-            this.uC_Register1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Register1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Register1.Name = "uC_Register1";
-            this.uC_Register1.Size = new System.Drawing.Size(715, 620);
-            this.uC_Register1.TabIndex = 0;
-            // 
-            // uC_Login1
-            // 
-            this.uC_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Login1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Login1.Name = "uC_Login1";
-            this.uC_Login1.Size = new System.Drawing.Size(715, 620);
-            this.uC_Login1.TabIndex = 1;
-            this.uC_Login1.Visible = false;
-            // 
-            // Login
+            // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,11 +108,11 @@
             this.Controls.Add(this.guna2Panel1);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.guna2Panel1.ResumeLayout(false);
             this.Control_Panel.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

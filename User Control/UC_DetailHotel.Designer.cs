@@ -34,8 +34,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_Name = new System.Windows.Forms.Label();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Dodung1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Dodung2 = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_Name2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -46,10 +46,10 @@
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Guest = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Tienich4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Tienich3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Tienich1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Tienich2 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Bed = new Guna.UI2.WinForms.Guna2Button();
             this.btn_area = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
@@ -119,39 +119,39 @@
             this.lbl_Name.TabIndex = 1;
             this.lbl_Name.Text = "Superior Double";
             // 
-            // guna2Button2
+            // btn_Dodung1
             // 
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.PaleGreen;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(24, 351);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(155, 38);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "Vòi tắm đứng";
+            this.btn_Dodung1.BorderRadius = 20;
+            this.btn_Dodung1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Dodung1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Dodung1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Dodung1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Dodung1.FillColor = System.Drawing.Color.PaleGreen;
+            this.btn_Dodung1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Dodung1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_Dodung1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Dodung1.Location = new System.Drawing.Point(24, 351);
+            this.btn_Dodung1.Name = "btn_Dodung1";
+            this.btn_Dodung1.Size = new System.Drawing.Size(155, 38);
+            this.btn_Dodung1.TabIndex = 3;
+            this.btn_Dodung1.Text = "Vòi tắm đứng";
             // 
-            // guna2Button3
+            // btn_Dodung2
             // 
-            this.guna2Button3.BorderRadius = 20;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.PaleGreen;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(185, 351);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(128, 38);
-            this.guna2Button3.TabIndex = 3;
-            this.guna2Button3.Text = "Máy lạnh";
+            this.btn_Dodung2.BorderRadius = 20;
+            this.btn_Dodung2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Dodung2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Dodung2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Dodung2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Dodung2.FillColor = System.Drawing.Color.PaleGreen;
+            this.btn_Dodung2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Dodung2.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_Dodung2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Dodung2.Location = new System.Drawing.Point(185, 351);
+            this.btn_Dodung2.Name = "btn_Dodung2";
+            this.btn_Dodung2.Size = new System.Drawing.Size(128, 38);
+            this.btn_Dodung2.TabIndex = 3;
+            this.btn_Dodung2.Text = "Máy lạnh";
             // 
             // lbl_Name2
             // 
@@ -266,83 +266,85 @@
             this.btn_Guest.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Guest.ForeColor = System.Drawing.Color.Black;
             this.btn_Guest.Image = global::KhachSan.Properties.Resources.people;
-            this.btn_Guest.Location = new System.Drawing.Point(649, 73);
+            this.btn_Guest.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Guest.Location = new System.Drawing.Point(694, 73);
             this.btn_Guest.Name = "btn_Guest";
-            this.btn_Guest.Size = new System.Drawing.Size(110, 38);
+            this.btn_Guest.Size = new System.Drawing.Size(208, 38);
             this.btn_Guest.TabIndex = 4;
             this.btn_Guest.Text = "2 khách";
+            this.btn_Guest.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button9
+            // btn_Tienich4
             // 
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button9.ForeColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button9.Image = global::KhachSan.Properties.Resources.calendar;
-            this.guna2Button9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button9.Location = new System.Drawing.Point(609, 177);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(217, 38);
-            this.guna2Button9.TabIndex = 4;
-            this.guna2Button9.Text = "Có thể đổi lịch";
-            this.guna2Button9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Tienich4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tienich4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tienich4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Tienich4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Tienich4.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Tienich4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tienich4.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_Tienich4.Image = global::KhachSan.Properties.Resources.calendar;
+            this.btn_Tienich4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Tienich4.Location = new System.Drawing.Point(719, 177);
+            this.btn_Tienich4.Name = "btn_Tienich4";
+            this.btn_Tienich4.Size = new System.Drawing.Size(303, 38);
+            this.btn_Tienich4.TabIndex = 4;
+            this.btn_Tienich4.Text = "Có thể đổi lịch";
+            this.btn_Tienich4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button8
+            // btn_Tienich3
             // 
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button8.ForeColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button8.Image = global::KhachSan.Properties.Resources.greenwifi;
-            this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button8.Location = new System.Drawing.Point(386, 177);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(217, 38);
-            this.guna2Button8.TabIndex = 4;
-            this.guna2Button8.Text = "Wifi miễn phí";
-            this.guna2Button8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Tienich3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tienich3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tienich3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Tienich3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Tienich3.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Tienich3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tienich3.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_Tienich3.Image = global::KhachSan.Properties.Resources.greenwifi;
+            this.btn_Tienich3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Tienich3.Location = new System.Drawing.Point(386, 177);
+            this.btn_Tienich3.Name = "btn_Tienich3";
+            this.btn_Tienich3.Size = new System.Drawing.Size(303, 38);
+            this.btn_Tienich3.TabIndex = 4;
+            this.btn_Tienich3.Text = "Wifi miễn phí";
+            this.btn_Tienich3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button6
+            // btn_Tienich1
             // 
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button6.Image = global::KhachSan.Properties.Resources.restaurant;
-            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button6.Location = new System.Drawing.Point(386, 133);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(217, 38);
-            this.guna2Button6.TabIndex = 4;
-            this.guna2Button6.Text = "Không bao gồm bữa sáng";
-            this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Tienich1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tienich1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tienich1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Tienich1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Tienich1.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Tienich1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tienich1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_Tienich1.Image = global::KhachSan.Properties.Resources.restaurant;
+            this.btn_Tienich1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Tienich1.Location = new System.Drawing.Point(386, 133);
+            this.btn_Tienich1.Name = "btn_Tienich1";
+            this.btn_Tienich1.Size = new System.Drawing.Size(303, 38);
+            this.btn_Tienich1.TabIndex = 4;
+            this.btn_Tienich1.Text = "Không bao gồm bữa sáng";
+            this.btn_Tienich1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button7
+            // btn_Tienich2
             // 
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button7.ForeColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button7.Image = global::KhachSan.Properties.Resources.check;
-            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.Location = new System.Drawing.Point(609, 133);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(217, 38);
-            this.guna2Button7.TabIndex = 4;
-            this.guna2Button7.Text = "Miễn phí hủy phòng";
-            this.guna2Button7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Tienich2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tienich2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Tienich2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Tienich2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Tienich2.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Tienich2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tienich2.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btn_Tienich2.Image = global::KhachSan.Properties.Resources.check;
+            this.btn_Tienich2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Tienich2.Location = new System.Drawing.Point(719, 133);
+            this.btn_Tienich2.Name = "btn_Tienich2";
+            this.btn_Tienich2.Size = new System.Drawing.Size(303, 38);
+            this.btn_Tienich2.TabIndex = 4;
+            this.btn_Tienich2.Text = "Miễn phí hủy phòng";
+            this.btn_Tienich2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btn_Bed
             // 
@@ -357,7 +359,7 @@
             this.btn_Bed.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Bed.Location = new System.Drawing.Point(386, 73);
             this.btn_Bed.Name = "btn_Bed";
-            this.btn_Bed.Size = new System.Drawing.Size(257, 38);
+            this.btn_Bed.Size = new System.Drawing.Size(302, 38);
             this.btn_Bed.TabIndex = 4;
             this.btn_Bed.Text = "Giường đôi";
             this.btn_Bed.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -392,14 +394,14 @@
             this.Controls.Add(this.lbl_OldPrice);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Guest);
-            this.Controls.Add(this.guna2Button9);
-            this.Controls.Add(this.guna2Button8);
-            this.Controls.Add(this.guna2Button6);
-            this.Controls.Add(this.guna2Button7);
+            this.Controls.Add(this.btn_Tienich4);
+            this.Controls.Add(this.btn_Tienich3);
+            this.Controls.Add(this.btn_Tienich1);
+            this.Controls.Add(this.btn_Tienich2);
             this.Controls.Add(this.btn_Bed);
             this.Controls.Add(this.btn_BookNow);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.btn_Dodung2);
+            this.Controls.Add(this.btn_Dodung1);
             this.Controls.Add(this.btn_area);
             this.Controls.Add(this.lbl_Name2);
             this.Controls.Add(this.lbl_Name);
@@ -424,22 +426,22 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btn_area;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btn_Dodung1;
+        private Guna.UI2.WinForms.Guna2Button btn_Dodung2;
         private System.Windows.Forms.Label lbl_Name2;
         private Guna.UI2.WinForms.Guna2Button btn_Bed;
         private Guna.UI2.WinForms.Guna2Button btn_Guest;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button9;
+        private Guna.UI2.WinForms.Guna2Button btn_Tienich2;
+        private Guna.UI2.WinForms.Guna2Button btn_Tienich3;
+        private Guna.UI2.WinForms.Guna2Button btn_Tienich4;
         private System.Windows.Forms.Label lbl_OldPrice;
         private System.Windows.Forms.Label lbl_Price;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button btn_BookNow;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Button guna2Button11;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btn_Tienich1;
     }
 }

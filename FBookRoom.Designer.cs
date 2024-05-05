@@ -49,20 +49,22 @@
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Information = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.dragdownCon = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Profile = new System.Windows.Forms.Button();
-            this.btn_Card = new System.Windows.Forms.Button();
+            this.btn_MyHotel = new System.Windows.Forms.Button();
             this.btn_ListTrans = new System.Windows.Forms.Button();
             this.btn_OwnBook = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txt_DateBack = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmb_Night = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_AddHotel = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.Panel_Discount = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.dragdownCon.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -405,26 +407,6 @@
             this.guna2Button2.Text = "Bạn cần hỗ trợ? ";
             this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button1.Image = global::KhachSan.Properties.Resources.blue_search;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button1.Location = new System.Drawing.Point(188, 123);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(915, 43);
-            this.guna2Button1.TabIndex = 15;
-            this.guna2Button1.Text = "Khách sạn xem gần đây";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // btn_Search
             // 
             this.btn_Search.BorderRadius = 5;
@@ -483,7 +465,7 @@
             this.dragdownCon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dragdownCon.Controls.Add(this.panel1);
             this.dragdownCon.Controls.Add(this.btn_Profile);
-            this.dragdownCon.Controls.Add(this.btn_Card);
+            this.dragdownCon.Controls.Add(this.btn_MyHotel);
             this.dragdownCon.Controls.Add(this.btn_ListTrans);
             this.dragdownCon.Controls.Add(this.btn_OwnBook);
             this.dragdownCon.Location = new System.Drawing.Point(1014, 32);
@@ -513,22 +495,23 @@
             this.btn_Profile.Name = "btn_Profile";
             this.btn_Profile.Size = new System.Drawing.Size(194, 44);
             this.btn_Profile.TabIndex = 3;
-            this.btn_Profile.Text = "Chỉnh sửa hồ sơ";
+            this.btn_Profile.Text = "Thông tin cá nhân";
             this.btn_Profile.UseVisualStyleBackColor = false;
             this.btn_Profile.Click += new System.EventHandler(this.btn_Profile_Click);
             // 
-            // btn_Card
+            // btn_MyHotel
             // 
-            this.btn_Card.BackColor = System.Drawing.Color.White;
-            this.btn_Card.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Card.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Card.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btn_Card.Location = new System.Drawing.Point(3, 97);
-            this.btn_Card.Name = "btn_Card";
-            this.btn_Card.Size = new System.Drawing.Size(194, 44);
-            this.btn_Card.TabIndex = 4;
-            this.btn_Card.Text = "Thẻ của tôi";
-            this.btn_Card.UseVisualStyleBackColor = false;
+            this.btn_MyHotel.BackColor = System.Drawing.Color.White;
+            this.btn_MyHotel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MyHotel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MyHotel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_MyHotel.Location = new System.Drawing.Point(3, 97);
+            this.btn_MyHotel.Name = "btn_MyHotel";
+            this.btn_MyHotel.Size = new System.Drawing.Size(194, 44);
+            this.btn_MyHotel.TabIndex = 4;
+            this.btn_MyHotel.Text = "Khách sạn của tôi";
+            this.btn_MyHotel.UseVisualStyleBackColor = false;
+            this.btn_MyHotel.Click += new System.EventHandler(this.btn_MyHotel_Click);
             // 
             // btn_ListTrans
             // 
@@ -632,12 +615,46 @@
             this.btn_AddHotel.Text = "Thêm khách sạn";
             this.btn_AddHotel.Click += new System.EventHandler(this.btn_AddHotel_Click);
             // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.Red;
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Location = new System.Drawing.Point(1244, 12);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
+            this.btn_Exit.TabIndex = 30;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // Panel_Discount
+            // 
+            this.Panel_Discount.Location = new System.Drawing.Point(0, 98);
+            this.Panel_Discount.Name = "Panel_Discount";
+            this.Panel_Discount.Size = new System.Drawing.Size(1300, 90);
+            this.Panel_Discount.TabIndex = 31;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 98);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(271, 90);
+            this.guna2Panel1.TabIndex = 0;
+            // 
             // FBookRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1299, 657);
+            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.Panel_Discount);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_AddHotel);
             this.Controls.Add(this.cmb_Night);
             this.Controls.Add(this.txt_DateBack);
@@ -649,7 +666,6 @@
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.datetimepicker_ReceiveRoom);
             this.Controls.Add(this.cmb_Location);
             this.Controls.Add(this.txt_GuestAndRoom);
@@ -693,7 +709,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_GuestAndRoom;
         private Guna.UI2.WinForms.Guna2ComboBox cmb_Location;
         private Guna.UI2.WinForms.Guna2DateTimePicker datetimepicker_ReceiveRoom;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
@@ -705,13 +720,16 @@
         private System.Windows.Forms.FlowLayoutPanel dragdownCon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Profile;
-        private System.Windows.Forms.Button btn_Card;
+        private System.Windows.Forms.Button btn_MyHotel;
         private System.Windows.Forms.Button btn_ListTrans;
         private System.Windows.Forms.Button btn_OwnBook;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2TextBox txt_DateBack;
         private Guna.UI2.WinForms.Guna2ComboBox cmb_Night;
         private Guna.UI2.WinForms.Guna2Button btn_AddHotel;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel Panel_Discount;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
 

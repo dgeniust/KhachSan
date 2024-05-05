@@ -31,14 +31,15 @@ namespace KhachSan
         }
         private void btn_Pay_Click(object sender, EventArgs e)
         {
-            DatPhong dt = new DatPhong(txt_Name_Guest.Text, txt_Email_Guest.Text, txt_Phone_Guest.Text,room.hotelname, room.name, room.price, search.startday, search.endday, search.spendnight,search.guest, room.bed, room.p1);
-            dpDao.Add(dt);
-            this.dp = dt;
+            DatPhong datphong = new DatPhong(txt_Name_Guest.Text, txt_Email_Guest.Text, txt_Phone_Guest.Text,room.hotelname, room.name, room.price, search.startday, search.endday, search.spendnight,search.guest, room.bed, room.p1);
+            dpDao.Add(datphong);
+            this.dp = datphong;
             string query = string.Format("SELECT * FROM DATPHONG WHERE Email='" + dp.email + "'");
             string name = dp.hoten;
             FMyBook fmb = new FMyBook(dp,name, query);
             fmb.Show();
             this.Hide();
+            dpDao.SendEmail(room,search, dp.email);
         }
 
         private void Pay_Load(object sender, EventArgs e)
@@ -57,6 +58,11 @@ namespace KhachSan
             this.lbl_Pay_Price.Text = room.price + " VND";
             int result = Convert.ToInt32(room.price) + 31905;
             this.lbl_Pay_Total.Text = Convert.ToString(result) + " VND";
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

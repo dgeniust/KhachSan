@@ -66,6 +66,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_UploadImage = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_TienIch4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_DoDung2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_DoDung1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.dragdownCon.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -83,7 +90,7 @@
             this.dragdownCon.Controls.Add(this.btn_Card);
             this.dragdownCon.Controls.Add(this.btn_ListTrans);
             this.dragdownCon.Controls.Add(this.btn_OwnBook);
-            this.dragdownCon.Location = new System.Drawing.Point(1036, 35);
+            this.dragdownCon.Location = new System.Drawing.Point(1026, 36);
             this.dragdownCon.MaximumSize = new System.Drawing.Size(200, 247);
             this.dragdownCon.MinimumSize = new System.Drawing.Size(200, 43);
             this.dragdownCon.Name = "dragdownCon";
@@ -257,9 +264,9 @@
             // Panel_Hotel
             // 
             this.Panel_Hotel.AutoScroll = true;
-            this.Panel_Hotel.Location = new System.Drawing.Point(206, 657);
+            this.Panel_Hotel.Location = new System.Drawing.Point(12, 788);
             this.Panel_Hotel.Name = "Panel_Hotel";
-            this.Panel_Hotel.Size = new System.Drawing.Size(915, 445);
+            this.Panel_Hotel.Size = new System.Drawing.Size(1287, 445);
             this.Panel_Hotel.TabIndex = 47;
             // 
             // label1
@@ -543,7 +550,7 @@
             this.btn_AddRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_AddRoom.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_AddRoom.ForeColor = System.Drawing.Color.White;
-            this.btn_AddRoom.Location = new System.Drawing.Point(1121, 606);
+            this.btn_AddRoom.Location = new System.Drawing.Point(1121, 701);
             this.btn_AddRoom.Name = "btn_AddRoom";
             this.btn_AddRoom.Size = new System.Drawing.Size(145, 45);
             this.btn_AddRoom.TabIndex = 50;
@@ -552,33 +559,37 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(61, 412);
+            this.pictureBox1.Location = new System.Drawing.Point(61, 507);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(211, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(1049, 412);
+            this.pictureBox4.Location = new System.Drawing.Point(1049, 507);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(211, 168);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 51;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(402, 412);
+            this.pictureBox2.Location = new System.Drawing.Point(402, 507);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(211, 168);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 51;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(720, 412);
+            this.pictureBox3.Location = new System.Drawing.Point(720, 507);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(211, 168);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 51;
             this.pictureBox3.TabStop = false;
             // 
@@ -593,19 +604,128 @@
             this.btn_UploadImage.FillColor = System.Drawing.Color.White;
             this.btn_UploadImage.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_UploadImage.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btn_UploadImage.Location = new System.Drawing.Point(597, 606);
+            this.btn_UploadImage.Location = new System.Drawing.Point(597, 701);
             this.btn_UploadImage.Name = "btn_UploadImage";
             this.btn_UploadImage.Size = new System.Drawing.Size(145, 45);
             this.btn_UploadImage.TabIndex = 66;
             this.btn_UploadImage.Text = "Upload Image";
             this.btn_UploadImage.Click += new System.EventHandler(this.btn_UploadImage_Click);
             // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.Red;
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Location = new System.Drawing.Point(1232, 3);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
+            this.btn_Exit.TabIndex = 67;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.Location = new System.Drawing.Point(892, 382);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(159, 23);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "Tiện ích 4";
+            // 
+            // txt_TienIch4
+            // 
+            this.txt_TienIch4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_TienIch4.DefaultText = "";
+            this.txt_TienIch4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_TienIch4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_TienIch4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TienIch4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TienIch4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TienIch4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_TienIch4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_TienIch4.Location = new System.Drawing.Point(896, 409);
+            this.txt_TienIch4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_TienIch4.Name = "txt_TienIch4";
+            this.txt_TienIch4.PasswordChar = '\0';
+            this.txt_TienIch4.PlaceholderText = "";
+            this.txt_TienIch4.SelectedText = "";
+            this.txt_TienIch4.Size = new System.Drawing.Size(364, 33);
+            this.txt_TienIch4.TabIndex = 49;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DimGray;
+            this.label11.Location = new System.Drawing.Point(474, 382);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(159, 23);
+            this.label11.TabIndex = 48;
+            this.label11.Text = "Đồ dùng phòng";
+            // 
+            // txt_DoDung2
+            // 
+            this.txt_DoDung2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_DoDung2.DefaultText = "";
+            this.txt_DoDung2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_DoDung2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_DoDung2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_DoDung2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_DoDung2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_DoDung2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_DoDung2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_DoDung2.Location = new System.Drawing.Point(478, 409);
+            this.txt_DoDung2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_DoDung2.Name = "txt_DoDung2";
+            this.txt_DoDung2.PasswordChar = '\0';
+            this.txt_DoDung2.PlaceholderText = "";
+            this.txt_DoDung2.SelectedText = "";
+            this.txt_DoDung2.Size = new System.Drawing.Size(364, 33);
+            this.txt_DoDung2.TabIndex = 49;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.Location = new System.Drawing.Point(57, 382);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(159, 23);
+            this.label12.TabIndex = 48;
+            this.label12.Text = "Đồ dùng phòng";
+            // 
+            // txt_DoDung1
+            // 
+            this.txt_DoDung1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_DoDung1.DefaultText = "";
+            this.txt_DoDung1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_DoDung1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_DoDung1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_DoDung1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_DoDung1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_DoDung1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_DoDung1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_DoDung1.Location = new System.Drawing.Point(61, 409);
+            this.txt_DoDung1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_DoDung1.Name = "txt_DoDung1";
+            this.txt_DoDung1.PasswordChar = '\0';
+            this.txt_DoDung1.PlaceholderText = "";
+            this.txt_DoDung1.SelectedText = "";
+            this.txt_DoDung1.Size = new System.Drawing.Size(364, 33);
+            this.txt_DoDung1.TabIndex = 49;
+            // 
             // FAddRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1299, 1035);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(1325, 1035);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_UploadImage);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -616,7 +736,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_RoomName);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_DoDung1);
+            this.Controls.Add(this.txt_DoDung2);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txt_TienIch4);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.txt_TienIch3);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txt_TienIch2);
             this.Controls.Add(this.label8);
@@ -641,6 +767,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FAddRoom";
             this.Text = "FAddRoom";
+            this.Load += new System.EventHandler(this.FAddRoom_Load);
             this.dragdownCon.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -692,5 +819,12 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Guna.UI2.WinForms.Guna2Button btn_UploadImage;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox txt_TienIch4;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2TextBox txt_DoDung2;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2TextBox txt_DoDung1;
     }
 }

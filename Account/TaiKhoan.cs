@@ -60,5 +60,15 @@ namespace KhachSan.Account
 
         public string Taikhoan { get => taikhoan; set => taikhoan = value; }
         public string Matkhau { get => matkhau; set => matkhau = value; }
+        public string Email { get => email; set => email = value; }
+        public string Hoten { get => hoten; set => hoten = value; }
+        public string Ngaysinh { get => ngaysinh; set => ngaysinh = value; }
+        public string Gioitinh { get => gioitinh; set => gioitinh = value; }
+        public string Diachi { get => diachi; set => diachi = value; }
+        public string Sdt { get => sdt; set => sdt = value; }
+        public string Cccd { get => cccd; set => cccd = value; }
+        public string Ownerimage { get => ownerimage; set => ownerimage = value; }
+        public string Frontcccd { get => frontcccd; set => frontcccd = value; }
+        public string Backcccd { get => backcccd; set => backcccd = value; }
     }
 }

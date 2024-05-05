@@ -116,5 +116,10 @@ namespace KhachSan
             uC_Login1.Visible = false;
             uC_Register1.BringToFront();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

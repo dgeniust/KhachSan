@@ -13,6 +13,7 @@ namespace KhachSan
         public int spendnight;
         public string address;
         public int guest;
+        public int number_of_room;
 
 
         /*public DateTime endday;*/
@@ -24,13 +25,14 @@ namespace KhachSan
             this.address = address;
         }*/
 
-        public Search(DateTime startday, DateTime endday, int spendnight, string address, int guest)
+        public Search(DateTime startday, DateTime endday, int spendnight, string address, int guest, int number_of_room)
         {
             this.startday = startday;
             this.endday = endday;
             this.spendnight = spendnight;
             this.address = address;
             this.guest = guest;
+            this.number_of_room = number_of_room;
         }
     }
 }

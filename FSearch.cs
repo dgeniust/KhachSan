@@ -14,8 +14,6 @@ namespace KhachSan
 {
     public partial class FSearch : Form
     {
-        DBConnection db = new DBConnection();
-        UC_Hotel hotel = new UC_Hotel();
         HotelDAO htDAO = new HotelDAO(); 
 
         Search search;
@@ -23,14 +21,6 @@ namespace KhachSan
         {
             InitializeComponent();
         }
-
-
-        /*string value;
-        public FSearch(string VALUE)
-        {
-            InitializeComponent();
-            value = VALUE;
-        }*/
         public FSearch(Search VALUE)
         {
             InitializeComponent();
@@ -38,30 +28,40 @@ namespace KhachSan
         }
         private void FSearch_Load(object sender, EventArgs e)
         {
-            /*Panel_Hotel.Controls.Clear();
-            string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + search.address + "'";
-            DataTable dt = new DataTable();
-            dt = db.LoadData(query);
-            int x = 0;
-            foreach (DataRow dr in dt.Rows)
-            {
-                Panel panel = new Panel
-                {
-                    Size = new Size(685, 110),
-                    Location = new Point(0, x),
-                    BorderStyle = BorderStyle.FixedSingle
-                };
-                Hotel ht = new Hotel(dr);
-
-                UC_Hotel hotel = new UC_Hotel(ht, search);
-                x += 109;
-                panel.Controls.Add(hotel);
-                Panel_Hotel.Controls.Add(panel);
-            }*/
-            string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + search.address + "'";
+            /*string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + search.address + "'";*/
+            string query = "SELECT * FROM KHACHSAN ";
             htDAO.GeneratePanel(query, Panel_Hotel, search);
         }
 
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
 
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + cmb_Location.Text + "'";
+            htDAO.GeneratePanel(query, Panel_Hotel, search);
+            search.startday = dtp_DateTake.Value.Date;
+            search.guest = Convert.ToInt32(cmb_People.Text);
+            this.Refresh();
+        }
+
+        private void btn_SaleBirthday_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM KHACHSAN WHERE UUDAI = N'Sale sinh nhật'";
+            htDAO.GeneratePanel(query, Panel_Hotel, search);
+        }
+
+        private void btn_SpecialDiscount_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM KHACHSAN WHERE UUDAI = N'Ưu đãi đặc biệt'";
+            htDAO.GeneratePanel(query, Panel_Hotel, search);
+        }
+
+        private void btn_All_Click(object sender, EventArgs e)
+        {
+            FSearch_Load(sender, e);
+        }
     }
 }

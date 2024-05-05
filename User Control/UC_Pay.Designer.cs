@@ -154,7 +154,7 @@
             this.btn_Bed.Image = global::KhachSan.Properties.Resources.bed;
             this.btn_Bed.Location = new System.Drawing.Point(177, 520);
             this.btn_Bed.Name = "btn_Bed";
-            this.btn_Bed.Size = new System.Drawing.Size(143, 38);
+            this.btn_Bed.Size = new System.Drawing.Size(278, 38);
             this.btn_Bed.TabIndex = 27;
             this.btn_Bed.Text = "1 Giuong doi";
             // 

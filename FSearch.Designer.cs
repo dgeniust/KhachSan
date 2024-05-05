@@ -50,25 +50,26 @@
             this.guna2CustomCheckBox2 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_All = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.dtp_DateTake = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.cmb_Location = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_SaleBirthday = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_SpecialDiscount = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_PayInHotel = new Guna.UI2.WinForms.Guna2Button();
             this.Panel_Hotel = new System.Windows.Forms.Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.cmb_People = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -368,34 +369,35 @@
             this.guna2HtmlLabel2.TabIndex = 0;
             this.guna2HtmlLabel2.Text = "Bộ lọc phổ biến cho";
             // 
-            // guna2Button1
+            // btn_All
             // 
-            this.guna2Button1.CheckedState.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.CheckedState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button1.Location = new System.Drawing.Point(30, 12);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2Button1.Size = new System.Drawing.Size(107, 26);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "All";
+            this.btn_All.CheckedState.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_All.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btn_All.CheckedState.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_All.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_All.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_All.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_All.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_All.FillColor = System.Drawing.Color.White;
+            this.btn_All.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_All.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_All.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_All.HoverState.FillColor = System.Drawing.Color.White;
+            this.btn_All.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_All.Location = new System.Drawing.Point(30, 12);
+            this.btn_All.Name = "btn_All";
+            this.btn_All.PressedColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_All.Size = new System.Drawing.Size(107, 26);
+            this.btn_All.TabIndex = 0;
+            this.btn_All.Text = "All";
+            this.btn_All.Click += new System.EventHandler(this.btn_All_Click);
             // 
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.Controls.Add(this.btn_Search);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2DateTimePicker1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ComboBox2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ComboBox1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.dtp_DateTake);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cmb_People);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cmb_Location);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.DarkBlue;
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.LightSkyBlue;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.RoyalBlue;
@@ -424,56 +426,50 @@
             this.btn_Search.Size = new System.Drawing.Size(259, 36);
             this.btn_Search.TabIndex = 11;
             this.btn_Search.Text = "Tìm khách sạn";
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
-            // guna2DateTimePicker1
+            // dtp_DateTake
             // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderRadius = 8;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.SystemColors.ControlLightLight;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(404, 18);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(285, 39);
-            this.guna2DateTimePicker1.TabIndex = 1;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 2, 29, 21, 10, 0, 381);
+            this.dtp_DateTake.BackColor = System.Drawing.Color.Transparent;
+            this.dtp_DateTake.BorderRadius = 8;
+            this.dtp_DateTake.Checked = true;
+            this.dtp_DateTake.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dtp_DateTake.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_DateTake.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtp_DateTake.Location = new System.Drawing.Point(404, 18);
+            this.dtp_DateTake.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_DateTake.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_DateTake.Name = "dtp_DateTake";
+            this.dtp_DateTake.Size = new System.Drawing.Size(285, 39);
+            this.dtp_DateTake.TabIndex = 1;
+            this.dtp_DateTake.Value = new System.DateTime(2024, 2, 29, 21, 10, 0, 381);
             // 
-            // guna2ComboBox2
+            // cmb_Location
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderRadius = 8;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FillColor = System.Drawing.SystemColors.HighlightText;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(718, 18);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(253, 36);
-            this.guna2ComboBox2.TabIndex = 0;
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 8;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FillColor = System.Drawing.SystemColors.HighlightText;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(27, 18);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(346, 36);
-            this.guna2ComboBox1.TabIndex = 0;
+            this.cmb_Location.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_Location.BorderRadius = 8;
+            this.cmb_Location.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmb_Location.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Location.FillColor = System.Drawing.SystemColors.HighlightText;
+            this.cmb_Location.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmb_Location.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmb_Location.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmb_Location.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmb_Location.ItemHeight = 30;
+            this.cmb_Location.Items.AddRange(new object[] {
+            "Da Nang",
+            "Thanh Pho Ho Chi Minh",
+            "Da Lat",
+            "Ninh Thuan",
+            "Nha Trang",
+            "Bangkok",
+            "Singapore",
+            "Kuala Lumpur",
+            "Vung Tau"});
+            this.cmb_Location.Location = new System.Drawing.Point(27, 18);
+            this.cmb_Location.Name = "cmb_Location";
+            this.cmb_Location.Size = new System.Drawing.Size(346, 36);
+            this.cmb_Location.TabIndex = 0;
             // 
             // guna2Button6
             // 
@@ -540,61 +536,63 @@
             this.guna2HtmlLabel1.TabIndex = 35;
             this.guna2HtmlLabel1.Text = "NAME _ APP";
             // 
-            // guna2Button2
+            // btn_SaleBirthday
             // 
-            this.guna2Button2.CheckedState.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.CheckedState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button2.Location = new System.Drawing.Point(154, 12);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.PressedColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2Button2.Size = new System.Drawing.Size(136, 26);
-            this.guna2Button2.TabIndex = 0;
-            this.guna2Button2.Text = "Sale sinh nhật";
+            this.btn_SaleBirthday.CheckedState.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SaleBirthday.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btn_SaleBirthday.CheckedState.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SaleBirthday.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SaleBirthday.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SaleBirthday.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_SaleBirthday.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_SaleBirthday.FillColor = System.Drawing.Color.White;
+            this.btn_SaleBirthday.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SaleBirthday.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_SaleBirthday.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SaleBirthday.HoverState.FillColor = System.Drawing.Color.White;
+            this.btn_SaleBirthday.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SaleBirthday.Location = new System.Drawing.Point(154, 12);
+            this.btn_SaleBirthday.Name = "btn_SaleBirthday";
+            this.btn_SaleBirthday.PressedColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_SaleBirthday.Size = new System.Drawing.Size(136, 26);
+            this.btn_SaleBirthday.TabIndex = 0;
+            this.btn_SaleBirthday.Text = "Sale sinh nhật";
+            this.btn_SaleBirthday.Click += new System.EventHandler(this.btn_SaleBirthday_Click);
             // 
             // guna2CustomGradientPanel2
             // 
-            this.guna2CustomGradientPanel2.Controls.Add(this.guna2Button10);
+            this.guna2CustomGradientPanel2.Controls.Add(this.btn_SpecialDiscount);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2Button9);
-            this.guna2CustomGradientPanel2.Controls.Add(this.guna2Button8);
-            this.guna2CustomGradientPanel2.Controls.Add(this.guna2Button2);
-            this.guna2CustomGradientPanel2.Controls.Add(this.guna2Button1);
+            this.guna2CustomGradientPanel2.Controls.Add(this.btn_PayInHotel);
+            this.guna2CustomGradientPanel2.Controls.Add(this.btn_SaleBirthday);
+            this.guna2CustomGradientPanel2.Controls.Add(this.btn_All);
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(340, 173);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(915, 50);
             this.guna2CustomGradientPanel2.TabIndex = 43;
             // 
-            // guna2Button10
+            // btn_SpecialDiscount
             // 
-            this.guna2Button10.CheckedState.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button10.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button10.CheckedState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button10.FillColor = System.Drawing.Color.White;
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button10.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button10.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button10.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button10.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button10.Location = new System.Drawing.Point(749, 12);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.PressedColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2Button10.Size = new System.Drawing.Size(150, 26);
-            this.guna2Button10.TabIndex = 0;
-            this.guna2Button10.Text = "Ưu đãi đặc biệt ";
+            this.btn_SpecialDiscount.CheckedState.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SpecialDiscount.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btn_SpecialDiscount.CheckedState.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SpecialDiscount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SpecialDiscount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_SpecialDiscount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_SpecialDiscount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_SpecialDiscount.FillColor = System.Drawing.Color.White;
+            this.btn_SpecialDiscount.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SpecialDiscount.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_SpecialDiscount.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SpecialDiscount.HoverState.FillColor = System.Drawing.Color.White;
+            this.btn_SpecialDiscount.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_SpecialDiscount.Location = new System.Drawing.Point(749, 12);
+            this.btn_SpecialDiscount.Name = "btn_SpecialDiscount";
+            this.btn_SpecialDiscount.PressedColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_SpecialDiscount.Size = new System.Drawing.Size(150, 26);
+            this.btn_SpecialDiscount.TabIndex = 0;
+            this.btn_SpecialDiscount.Text = "Ưu đãi đặc biệt ";
+            this.btn_SpecialDiscount.Click += new System.EventHandler(this.btn_SpecialDiscount_Click);
             // 
             // guna2Button9
             // 
@@ -611,34 +609,34 @@
             this.guna2Button9.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
             this.guna2Button9.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2Button9.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button9.Location = new System.Drawing.Point(533, 12);
+            this.guna2Button9.Location = new System.Drawing.Point(522, 12);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.PressedColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2Button9.Size = new System.Drawing.Size(197, 26);
+            this.guna2Button9.Size = new System.Drawing.Size(221, 26);
             this.guna2Button9.TabIndex = 0;
             this.guna2Button9.Text = "Khách sạn xuất hóa đơn";
             // 
-            // guna2Button8
+            // btn_PayInHotel
             // 
-            this.guna2Button8.CheckedState.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button8.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button8.CheckedState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.White;
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button8.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button8.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button8.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button8.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button8.Location = new System.Drawing.Point(310, 12);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.PressedColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2Button8.Size = new System.Drawing.Size(206, 26);
-            this.guna2Button8.TabIndex = 0;
-            this.guna2Button8.Text = "Thanh toán tại khách sạn";
+            this.btn_PayInHotel.CheckedState.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_PayInHotel.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btn_PayInHotel.CheckedState.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_PayInHotel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_PayInHotel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_PayInHotel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_PayInHotel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_PayInHotel.FillColor = System.Drawing.Color.White;
+            this.btn_PayInHotel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PayInHotel.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_PayInHotel.HoverState.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_PayInHotel.HoverState.FillColor = System.Drawing.Color.White;
+            this.btn_PayInHotel.HoverState.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_PayInHotel.Location = new System.Drawing.Point(310, 12);
+            this.btn_PayInHotel.Name = "btn_PayInHotel";
+            this.btn_PayInHotel.PressedColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_PayInHotel.Size = new System.Drawing.Size(206, 26);
+            this.btn_PayInHotel.TabIndex = 0;
+            this.btn_PayInHotel.Text = "Thanh toán tại khách sạn";
             // 
             // Panel_Hotel
             // 
@@ -702,11 +700,52 @@
             this.guna2Button3.TabIndex = 40;
             this.guna2Button3.Text = " Khuyến mãi  ";
             // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.Red;
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Location = new System.Drawing.Point(1231, 9);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
+            this.btn_Exit.TabIndex = 47;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // cmb_People
+            // 
+            this.cmb_People.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_People.BorderRadius = 8;
+            this.cmb_People.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmb_People.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_People.FillColor = System.Drawing.SystemColors.HighlightText;
+            this.cmb_People.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmb_People.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmb_People.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmb_People.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmb_People.ItemHeight = 30;
+            this.cmb_People.Items.AddRange(new object[] {
+            "1 khách",
+            "2 khách ",
+            "3 khách ",
+            "4 khách ",
+            "5 khách "});
+            this.cmb_People.Location = new System.Drawing.Point(718, 18);
+            this.cmb_People.Name = "cmb_People";
+            this.cmb_People.Size = new System.Drawing.Size(285, 36);
+            this.cmb_People.TabIndex = 0;
+            // 
             // FSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1281, 716);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.Panel_Hotel);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2Button7);
@@ -772,21 +811,22 @@
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_All;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2Button btn_Search;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_DateTake;
+        private Guna.UI2.WinForms.Guna2ComboBox cmb_Location;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btn_SaleBirthday;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button10;
+        private Guna.UI2.WinForms.Guna2Button btn_SpecialDiscount;
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
+        private Guna.UI2.WinForms.Guna2Button btn_PayInHotel;
         private System.Windows.Forms.Panel Panel_Hotel;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
+        private Guna.UI2.WinForms.Guna2ComboBox cmb_People;
     }
 }
