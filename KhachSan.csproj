@@ -55,6 +55,7 @@
     <Compile Include="Account\Connection.cs" />
     <Compile Include="Account\Modify.cs" />
     <Compile Include="Account\TaiKhoan.cs" />
+    <Compile Include="ChatBoxDAO.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +84,12 @@
     </Compile>
     <Compile Include="FBookRoom.Designer.cs">
       <DependentUpon>FBookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChatBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChatBox.Designer.cs">
+      <DependentUpon>FChatBox.cs</DependentUpon>
     </Compile>
     <Compile Include="FHotel.cs">
       <SubType>Form</SubType>
@@ -188,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FBookRoom.resx">
       <DependentUpon>FBookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChatBox.resx">
+      <DependentUpon>FChatBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FHotel.resx">
       <DependentUpon>FHotel.cs</DependentUpon>

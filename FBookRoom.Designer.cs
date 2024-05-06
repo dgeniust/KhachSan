@@ -49,7 +49,6 @@
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.dragdownCon = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Information = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Profile = new System.Windows.Forms.Button();
             this.btn_MyHotel = new System.Windows.Forms.Button();
             this.btn_ListTrans = new System.Windows.Forms.Button();
@@ -59,9 +58,10 @@
             this.cmb_Night = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btn_AddHotel = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Information = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Chat = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
             this.dragdownCon.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -392,28 +392,6 @@
             this.panel1.Size = new System.Drawing.Size(200, 44);
             this.panel1.TabIndex = 2;
             // 
-            // btn_Information
-            // 
-            this.btn_Information.BackColor = System.Drawing.Color.White;
-            this.btn_Information.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.btn_Information.BorderRadius = 5;
-            this.btn_Information.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Information.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Information.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Information.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Information.FillColor = System.Drawing.Color.Transparent;
-            this.btn_Information.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btn_Information.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.btn_Information.Image = global::KhachSan.Properties.Resources.account;
-            this.btn_Information.ImageSize = new System.Drawing.Size(45, 45);
-            this.btn_Information.Location = new System.Drawing.Point(0, 0);
-            this.btn_Information.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_Information.Name = "btn_Information";
-            this.btn_Information.Size = new System.Drawing.Size(200, 43);
-            this.btn_Information.TabIndex = 20;
-            this.btn_Information.Text = "Người dùng";
-            this.btn_Information.Click += new System.EventHandler(this.btn_Information_Click);
-            // 
             // btn_Profile
             // 
             this.btn_Profile.BackColor = System.Drawing.Color.White;
@@ -561,6 +539,28 @@
             this.btn_AddHotel.Text = "Thêm khách sạn";
             this.btn_AddHotel.Click += new System.EventHandler(this.btn_AddHotel_Click);
             // 
+            // btn_Information
+            // 
+            this.btn_Information.BackColor = System.Drawing.Color.White;
+            this.btn_Information.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Information.BorderRadius = 5;
+            this.btn_Information.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Information.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Information.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Information.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Information.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Information.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btn_Information.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.btn_Information.Image = global::KhachSan.Properties.Resources.account;
+            this.btn_Information.ImageSize = new System.Drawing.Size(45, 45);
+            this.btn_Information.Location = new System.Drawing.Point(0, 0);
+            this.btn_Information.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Information.Name = "btn_Information";
+            this.btn_Information.Size = new System.Drawing.Size(200, 43);
+            this.btn_Information.TabIndex = 20;
+            this.btn_Information.Text = "Người dùng";
+            this.btn_Information.Click += new System.EventHandler(this.btn_Information_Click);
+            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
@@ -591,25 +591,26 @@
             this.guna2Button3.TabIndex = 19;
             this.guna2Button3.Text = "Khuyến mãi";
             // 
-            // guna2Button2
+            // btn_Chat
             // 
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::KhachSan.Properties.Resources.ques_mark;
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button2.Location = new System.Drawing.Point(1082, 600);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(205, 45);
-            this.guna2Button2.TabIndex = 16;
-            this.guna2Button2.Text = "Bạn cần hỗ trợ? ";
-            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Chat.BorderRadius = 20;
+            this.btn_Chat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Chat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Chat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Chat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Chat.FillColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Chat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Chat.ForeColor = System.Drawing.Color.White;
+            this.btn_Chat.Image = global::KhachSan.Properties.Resources.ques_mark;
+            this.btn_Chat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Chat.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_Chat.Location = new System.Drawing.Point(1082, 600);
+            this.btn_Chat.Name = "btn_Chat";
+            this.btn_Chat.Size = new System.Drawing.Size(205, 45);
+            this.btn_Chat.TabIndex = 16;
+            this.btn_Chat.Text = "Bạn cần hỗ trợ? ";
+            this.btn_Chat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Chat.Click += new System.EventHandler(this.btn_Chat_Click);
             // 
             // btn_Search
             // 
@@ -647,7 +648,7 @@
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.btn_Chat);
             this.Controls.Add(this.datetimepicker_ReceiveRoom);
             this.Controls.Add(this.cmb_Location);
             this.Controls.Add(this.txt_GuestAndRoom);
@@ -691,7 +692,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_GuestAndRoom;
         private Guna.UI2.WinForms.Guna2ComboBox cmb_Location;
         private Guna.UI2.WinForms.Guna2DateTimePicker datetimepicker_ReceiveRoom;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btn_Chat;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;

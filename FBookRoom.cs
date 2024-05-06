@@ -111,6 +111,11 @@ namespace KhachSan
             fi.Show();
         }
 
+        private void btn_Chat_Click(object sender, EventArgs e)
+        {
+            FChatBox fcb = new FChatBox(tentk);
+            fcb.ShowDialog();
+        }
 
         private void btn_MyHotel_Click(object sender, EventArgs e)
         {

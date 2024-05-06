@@ -89,16 +89,6 @@ namespace KhachSan
         {
             Application.Exit();
         }
-        private void changeImage(object sender, EventArgs e)
-        {
-            List<Bitmap> images = new List<Bitmap>();
-            images.Add(Properties.Resources.login_photo1);
-            images.Add(Properties.Resources.login_photo3);
-            images.Add(Properties.Resources.login_photo4);
-            int index = DateTime.Now.Second % images.Count;
-            //this.pictureBox1.Image = images[index];
-
-        }
 
         public void showLogin(object sender, EventArgs e)
         {

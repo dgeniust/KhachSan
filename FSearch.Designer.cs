@@ -452,6 +452,7 @@
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FSearch";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FSearch";
             this.Load += new System.EventHandler(this.FSearch_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
