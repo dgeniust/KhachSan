@@ -28,32 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.cb_3star = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.cb_4star = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.cb_5star = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.guna2CustomCheckBox2 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_All = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
             this.dtp_DateTake = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.cmb_People = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmb_Location = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
@@ -69,305 +48,11 @@
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.cmb_People = new Guna.UI2.WinForms.Guna2ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.Panel_Discount = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.Location = new System.Drawing.Point(23, 53);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(211, 56);
-            this.trackBar1.TabIndex = 1;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(12, 12);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(163, 22);
-            this.guna2HtmlLabel4.TabIndex = 0;
-            this.guna2HtmlLabel4.Text = "Phạm vi giá";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel1.Controls.Add(this.trackBar1);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2Panel1.Location = new System.Drawing.Point(34, 351);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(259, 156);
-            this.guna2Panel1.TabIndex = 45;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.guna2PictureBox13);
-            this.panel1.Controls.Add(this.guna2PictureBox12);
-            this.panel1.Controls.Add(this.guna2PictureBox11);
-            this.panel1.Controls.Add(this.guna2PictureBox10);
-            this.panel1.Controls.Add(this.guna2PictureBox9);
-            this.panel1.Controls.Add(this.guna2PictureBox8);
-            this.panel1.Controls.Add(this.guna2PictureBox7);
-            this.panel1.Controls.Add(this.guna2PictureBox6);
-            this.panel1.Controls.Add(this.guna2PictureBox5);
-            this.panel1.Controls.Add(this.guna2PictureBox4);
-            this.panel1.Controls.Add(this.guna2PictureBox3);
-            this.panel1.Controls.Add(this.guna2PictureBox2);
-            this.panel1.Controls.Add(this.cb_3star);
-            this.panel1.Controls.Add(this.cb_4star);
-            this.panel1.Controls.Add(this.cb_5star);
-            this.panel1.Controls.Add(this.guna2CustomCheckBox2);
-            this.panel1.Controls.Add(this.guna2HtmlLabel3);
-            this.panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.panel1.Location = new System.Drawing.Point(34, 173);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(259, 162);
-            this.panel1.TabIndex = 44;
-            // 
-            // guna2PictureBox13
-            // 
-            this.guna2PictureBox13.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox13.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox13.ImageRotate = 0F;
-            this.guna2PictureBox13.Location = new System.Drawing.Point(83, 111);
-            this.guna2PictureBox13.Name = "guna2PictureBox13";
-            this.guna2PictureBox13.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox13.TabIndex = 12;
-            this.guna2PictureBox13.TabStop = false;
-            // 
-            // guna2PictureBox12
-            // 
-            this.guna2PictureBox12.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox12.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox12.ImageRotate = 0F;
-            this.guna2PictureBox12.Location = new System.Drawing.Point(59, 111);
-            this.guna2PictureBox12.Name = "guna2PictureBox12";
-            this.guna2PictureBox12.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox12.TabIndex = 12;
-            this.guna2PictureBox12.TabStop = false;
-            // 
-            // guna2PictureBox11
-            // 
-            this.guna2PictureBox11.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox11.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox11.ImageRotate = 0F;
-            this.guna2PictureBox11.Location = new System.Drawing.Point(35, 111);
-            this.guna2PictureBox11.Name = "guna2PictureBox11";
-            this.guna2PictureBox11.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox11.TabIndex = 12;
-            this.guna2PictureBox11.TabStop = false;
-            // 
-            // guna2PictureBox10
-            // 
-            this.guna2PictureBox10.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox10.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox10.ImageRotate = 0F;
-            this.guna2PictureBox10.Location = new System.Drawing.Point(107, 89);
-            this.guna2PictureBox10.Name = "guna2PictureBox10";
-            this.guna2PictureBox10.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox10.TabIndex = 11;
-            this.guna2PictureBox10.TabStop = false;
-            // 
-            // guna2PictureBox9
-            // 
-            this.guna2PictureBox9.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox9.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(83, 89);
-            this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox9.TabIndex = 11;
-            this.guna2PictureBox9.TabStop = false;
-            // 
-            // guna2PictureBox8
-            // 
-            this.guna2PictureBox8.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox8.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(59, 89);
-            this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox8.TabIndex = 11;
-            this.guna2PictureBox8.TabStop = false;
-            // 
-            // guna2PictureBox7
-            // 
-            this.guna2PictureBox7.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox7.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(35, 89);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox7.TabIndex = 11;
-            this.guna2PictureBox7.TabStop = false;
-            // 
-            // guna2PictureBox6
-            // 
-            this.guna2PictureBox6.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox6.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(131, 67);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox6.TabIndex = 10;
-            this.guna2PictureBox6.TabStop = false;
-            // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox5.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(107, 67);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox5.TabIndex = 9;
-            this.guna2PictureBox5.TabStop = false;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox4.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(83, 67);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox4.TabIndex = 8;
-            this.guna2PictureBox4.TabStop = false;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(59, 67);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 7;
-            this.guna2PictureBox3.TabStop = false;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::KhachSan.Properties.Resources.star;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(35, 67);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(18, 20);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 7;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // cb_3star
-            // 
-            this.cb_3star.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_3star.CheckedState.BorderRadius = 2;
-            this.cb_3star.CheckedState.BorderThickness = 0;
-            this.cb_3star.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
-            this.cb_3star.Location = new System.Drawing.Point(12, 115);
-            this.cb_3star.Name = "cb_3star";
-            this.cb_3star.Size = new System.Drawing.Size(17, 16);
-            this.cb_3star.TabIndex = 6;
-            this.cb_3star.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.cb_3star.UncheckedState.BorderRadius = 2;
-            this.cb_3star.UncheckedState.BorderThickness = 1;
-            this.cb_3star.UncheckedState.FillColor = System.Drawing.Color.White;
-            // 
-            // cb_4star
-            // 
-            this.cb_4star.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_4star.CheckedState.BorderRadius = 2;
-            this.cb_4star.CheckedState.BorderThickness = 0;
-            this.cb_4star.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
-            this.cb_4star.Location = new System.Drawing.Point(12, 93);
-            this.cb_4star.Name = "cb_4star";
-            this.cb_4star.Size = new System.Drawing.Size(17, 16);
-            this.cb_4star.TabIndex = 6;
-            this.cb_4star.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.cb_4star.UncheckedState.BorderRadius = 2;
-            this.cb_4star.UncheckedState.BorderThickness = 1;
-            this.cb_4star.UncheckedState.FillColor = System.Drawing.Color.White;
-            // 
-            // cb_5star
-            // 
-            this.cb_5star.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cb_5star.CheckedState.BorderRadius = 2;
-            this.cb_5star.CheckedState.BorderThickness = 0;
-            this.cb_5star.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
-            this.cb_5star.Location = new System.Drawing.Point(12, 71);
-            this.cb_5star.Name = "cb_5star";
-            this.cb_5star.Size = new System.Drawing.Size(17, 16);
-            this.cb_5star.TabIndex = 5;
-            this.cb_5star.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.cb_5star.UncheckedState.BorderRadius = 2;
-            this.cb_5star.UncheckedState.BorderThickness = 1;
-            this.cb_5star.UncheckedState.FillColor = System.Drawing.Color.White;
-            // 
-            // guna2CustomCheckBox2
-            // 
-            this.guna2CustomCheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomCheckBox2.CheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox2.CheckedState.BorderThickness = 0;
-            this.guna2CustomCheckBox2.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2CustomCheckBox2.Location = new System.Drawing.Point(12, 49);
-            this.guna2CustomCheckBox2.Name = "guna2CustomCheckBox2";
-            this.guna2CustomCheckBox2.Size = new System.Drawing.Size(17, 16);
-            this.guna2CustomCheckBox2.TabIndex = 5;
-            this.guna2CustomCheckBox2.UncheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CustomCheckBox2.UncheckedState.BorderRadius = 2;
-            this.guna2CustomCheckBox2.UncheckedState.BorderThickness = 1;
-            this.guna2CustomCheckBox2.UncheckedState.FillColor = System.Drawing.Color.White;
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(35, 47);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(97, 18);
-            this.guna2HtmlLabel3.TabIndex = 4;
-            this.guna2HtmlLabel3.Text = "Khách sạn";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 12);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(182, 22);
-            this.guna2HtmlLabel2.TabIndex = 0;
-            this.guna2HtmlLabel2.Text = "Bộ lọc phổ biến cho";
             // 
             // btn_All
             // 
@@ -443,6 +128,29 @@
             this.dtp_DateTake.Size = new System.Drawing.Size(285, 39);
             this.dtp_DateTake.TabIndex = 1;
             this.dtp_DateTake.Value = new System.DateTime(2024, 2, 29, 21, 10, 0, 381);
+            // 
+            // cmb_People
+            // 
+            this.cmb_People.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_People.BorderRadius = 8;
+            this.cmb_People.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmb_People.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_People.FillColor = System.Drawing.SystemColors.HighlightText;
+            this.cmb_People.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmb_People.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmb_People.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmb_People.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmb_People.ItemHeight = 30;
+            this.cmb_People.Items.AddRange(new object[] {
+            "1 khách",
+            "2 khách ",
+            "3 khách ",
+            "4 khách ",
+            "5 khách "});
+            this.cmb_People.Location = new System.Drawing.Point(718, 18);
+            this.cmb_People.Name = "cmb_People";
+            this.cmb_People.Size = new System.Drawing.Size(285, 36);
+            this.cmb_People.TabIndex = 0;
             // 
             // cmb_Location
             // 
@@ -717,41 +425,25 @@
             this.btn_Exit.Text = "X";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
-            // cmb_People
+            // Panel_Discount
             // 
-            this.cmb_People.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_People.BorderRadius = 8;
-            this.cmb_People.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_People.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_People.FillColor = System.Drawing.SystemColors.HighlightText;
-            this.cmb_People.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmb_People.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmb_People.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmb_People.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmb_People.ItemHeight = 30;
-            this.cmb_People.Items.AddRange(new object[] {
-            "1 khách",
-            "2 khách ",
-            "3 khách ",
-            "4 khách ",
-            "5 khách "});
-            this.cmb_People.Location = new System.Drawing.Point(718, 18);
-            this.cmb_People.Name = "cmb_People";
-            this.cmb_People.Size = new System.Drawing.Size(285, 36);
-            this.cmb_People.TabIndex = 0;
+            this.Panel_Discount.AutoScroll = true;
+            this.Panel_Discount.Location = new System.Drawing.Point(16, 173);
+            this.Panel_Discount.Name = "Panel_Discount";
+            this.Panel_Discount.Size = new System.Drawing.Size(306, 516);
+            this.Panel_Discount.TabIndex = 48;
             // 
             // FSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1281, 716);
+            this.Controls.Add(this.Panel_Discount);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.Panel_Hotel);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2Button7);
-            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2Button6);
             this.Controls.Add(this.guna2Button5);
@@ -762,22 +454,6 @@
             this.Name = "FSearch";
             this.Text = "FSearch";
             this.Load += new System.EventHandler(this.FSearch_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -788,29 +464,7 @@
         #endregion
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox13;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox12;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox cb_3star;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox cb_4star;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox cb_5star;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Button btn_All;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2Button btn_Search;
@@ -828,5 +482,6 @@
         private System.Windows.Forms.Panel Panel_Hotel;
         private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
         private Guna.UI2.WinForms.Guna2ComboBox cmb_People;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel Panel_Discount;
     }
 }

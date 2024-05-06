@@ -70,6 +70,8 @@
     <Compile Include="DetailHotel.Designer.cs">
       <DependentUpon>DetailHotel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Discount.cs" />
+    <Compile Include="DiscountDAO.cs" />
     <Compile Include="FAddRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +123,7 @@
     </Compile>
     <Compile Include="HotelDAO.cs" />
     <Compile Include="ItemDAO.cs" />
+    <Compile Include="PayDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
@@ -149,6 +152,12 @@
     </Compile>
     <Compile Include="User Control\UC_DetailHotel.Designer.cs">
       <DependentUpon>UC_DetailHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Discount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Discount.Designer.cs">
+      <DependentUpon>UC_Discount.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UC_Hotel.cs">
       <SubType>UserControl</SubType>
@@ -219,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_DetailHotel.resx">
       <DependentUpon>UC_DetailHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Discount.resx">
+      <DependentUpon>UC_Discount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Hotel.resx">
       <DependentUpon>UC_Hotel.cs</DependentUpon>

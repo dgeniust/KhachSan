@@ -25,7 +25,24 @@ namespace KhachSan
         }
         public void GenerateBookPanel(string query, Panel storage_panel)
         {
-            itemDAO.GenerateBookPanel(query, storage_panel);
+            storage_panel.Controls.Clear();
+            DataTable dt = new DataTable();
+            dt = db.LoadData(query);
+            int x = 0;
+            foreach (DataRow dr in dt.Rows)
+            {
+                Panel panel = new Panel
+                {
+                    Size = new Size(775, 130),
+                    Location = new Point(0, x),
+                    BorderStyle = BorderStyle.FixedSingle
+                };
+                DatPhong dp = new DatPhong(dr);
+                UC_MyBook uC_MyBook = new UC_MyBook(dp);
+                x += 132;
+                panel.Controls.Add(uC_MyBook);
+                storage_panel.Controls.Add(panel);
+            }
         }
         public Image LoadImageFromFile(string filePath)
         {

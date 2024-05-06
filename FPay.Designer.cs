@@ -40,10 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.Panel_DetailHotelPay = new System.Windows.Forms.Panel();
-            this.uC_Pay1 = new KhachSan.User_Control.UC_Pay();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_Pay = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
@@ -56,13 +52,13 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.Panel_DetailHotelPay = new System.Windows.Forms.Panel();
+            this.uC_Pay1 = new KhachSan.User_Control.UC_Pay();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2CheckBox4 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox6 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox5 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox3 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.txt_MaGG = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_ApplyCode = new Guna.UI2.WinForms.Guna2Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -74,10 +70,11 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.Panel_DetailHotelPay.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.Panel_DetailHotelPay.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -96,7 +93,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(35, 187);
+            this.panel2.Location = new System.Drawing.Point(23, 201);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(695, 368);
             this.panel2.TabIndex = 55;
@@ -246,61 +243,6 @@
     "phòng (E-voucher) qua email của mình.";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.btn_Exit);
-            this.panel1.Controls.Add(this.Panel_DetailHotelPay);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.guna2Separator2);
-            this.panel1.Controls.Add(this.guna2Separator1);
-            this.panel1.Controls.Add(this.guna2Button3);
-            this.panel1.Controls.Add(this.guna2Button2);
-            this.panel1.Controls.Add(this.guna2Button1);
-            this.panel1.Controls.Add(this.guna2PictureBox1);
-            this.panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1282, 654);
-            this.panel1.TabIndex = 0;
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Exit.FillColor = System.Drawing.Color.Red;
-            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.btn_Exit.Location = new System.Drawing.Point(1213, 3);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
-            this.btn_Exit.TabIndex = 13;
-            this.btn_Exit.Text = "X";
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // Panel_DetailHotelPay
-            // 
-            this.Panel_DetailHotelPay.Controls.Add(this.uC_Pay1);
-            this.Panel_DetailHotelPay.Location = new System.Drawing.Point(749, 187);
-            this.Panel_DetailHotelPay.Name = "Panel_DetailHotelPay";
-            this.Panel_DetailHotelPay.Size = new System.Drawing.Size(472, 1052);
-            this.Panel_DetailHotelPay.TabIndex = 59;
-            // 
-            // uC_Pay1
-            // 
-            this.uC_Pay1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uC_Pay1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Pay1.Name = "uC_Pay1";
-            this.uC_Pay1.Size = new System.Drawing.Size(472, 1052);
-            this.uC_Pay1.TabIndex = 0;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -315,7 +257,7 @@
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.label15);
             this.panel6.Controls.Add(this.label16);
-            this.panel6.Location = new System.Drawing.Point(35, 882);
+            this.panel6.Location = new System.Drawing.Point(23, 896);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(695, 357);
             this.panel6.TabIndex = 58;
@@ -358,7 +300,7 @@
             // 
             this.lbl_Tax.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Tax.ForeColor = System.Drawing.Color.Black;
-            this.lbl_Tax.Location = new System.Drawing.Point(488, 201);
+            this.lbl_Tax.Location = new System.Drawing.Point(493, 201);
             this.lbl_Tax.Name = "lbl_Tax";
             this.lbl_Tax.Size = new System.Drawing.Size(167, 35);
             this.lbl_Tax.TabIndex = 64;
@@ -369,7 +311,7 @@
             // 
             this.lbl_Pay_Total.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pay_Total.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbl_Pay_Total.Location = new System.Drawing.Point(488, 252);
+            this.lbl_Pay_Total.Location = new System.Drawing.Point(477, 252);
             this.lbl_Pay_Total.Name = "lbl_Pay_Total";
             this.lbl_Pay_Total.Size = new System.Drawing.Size(167, 35);
             this.lbl_Pay_Total.TabIndex = 64;
@@ -441,135 +383,120 @@
     " thuế và hóa đơn, vui lòng tham khảo Điều khoản và Điều kiện của Traveloka để đư" +
     "ợc giải đáp";
             // 
+            // Panel_DetailHotelPay
+            // 
+            this.Panel_DetailHotelPay.Controls.Add(this.uC_Pay1);
+            this.Panel_DetailHotelPay.Location = new System.Drawing.Point(737, 201);
+            this.Panel_DetailHotelPay.Name = "Panel_DetailHotelPay";
+            this.Panel_DetailHotelPay.Size = new System.Drawing.Size(472, 1052);
+            this.Panel_DetailHotelPay.TabIndex = 59;
+            // 
+            // uC_Pay1
+            // 
+            this.uC_Pay1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Pay1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Pay1.Name = "uC_Pay1";
+            this.uC_Pay1.Size = new System.Drawing.Size(472, 1052);
+            this.uC_Pay1.TabIndex = 0;
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.Red;
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Location = new System.Drawing.Point(1201, 17);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
+            this.btn_Exit.TabIndex = 13;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btn_Exit);
+            this.panel1.Controls.Add(this.Panel_DetailHotelPay);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.guna2Separator2);
+            this.panel1.Controls.Add(this.guna2Separator1);
+            this.panel1.Controls.Add(this.guna2Button3);
+            this.panel1.Controls.Add(this.guna2Button2);
+            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Controls.Add(this.guna2PictureBox1);
+            this.panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1282, 654);
+            this.panel1.TabIndex = 0;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Controls.Add(this.guna2CheckBox4);
-            this.panel4.Controls.Add(this.guna2CheckBox6);
-            this.panel4.Controls.Add(this.guna2CheckBox5);
-            this.panel4.Controls.Add(this.guna2CheckBox3);
-            this.panel4.Controls.Add(this.guna2CheckBox2);
-            this.panel4.Controls.Add(this.guna2CheckBox1);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.txt_MaGG);
+            this.panel4.Controls.Add(this.btn_ApplyCode);
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.label11);
-            this.panel4.Location = new System.Drawing.Point(35, 590);
+            this.panel4.Location = new System.Drawing.Point(23, 604);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(695, 254);
             this.panel4.TabIndex = 57;
             // 
-            // guna2CheckBox4
+            // txt_MaGG
             // 
-            this.guna2CheckBox4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox4.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox4.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CheckBox4.Location = new System.Drawing.Point(243, 181);
-            this.guna2CheckBox4.Name = "guna2CheckBox4";
-            this.guna2CheckBox4.Size = new System.Drawing.Size(203, 37);
-            this.guna2CheckBox4.TabIndex = 65;
-            this.guna2CheckBox4.Text = "Phòng liên thông";
-            this.guna2CheckBox4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox4.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox4.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox4.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.txt_MaGG.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_MaGG.DefaultText = "";
+            this.txt_MaGG.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_MaGG.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_MaGG.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_MaGG.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_MaGG.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_MaGG.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_MaGG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_MaGG.Location = new System.Drawing.Point(229, 140);
+            this.txt_MaGG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_MaGG.Name = "txt_MaGG";
+            this.txt_MaGG.PasswordChar = '\0';
+            this.txt_MaGG.PlaceholderText = "";
+            this.txt_MaGG.SelectedText = "";
+            this.txt_MaGG.Size = new System.Drawing.Size(449, 37);
+            this.txt_MaGG.TabIndex = 67;
             // 
-            // guna2CheckBox6
+            // btn_ApplyCode
             // 
-            this.guna2CheckBox6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox6.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox6.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CheckBox6.Location = new System.Drawing.Point(476, 181);
-            this.guna2CheckBox6.Name = "guna2CheckBox6";
-            this.guna2CheckBox6.Size = new System.Drawing.Size(203, 37);
-            this.guna2CheckBox6.TabIndex = 65;
-            this.guna2CheckBox6.Text = "Giờ trả phòng";
-            this.guna2CheckBox6.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox6.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox6.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox6.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // guna2CheckBox5
-            // 
-            this.guna2CheckBox5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox5.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox5.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CheckBox5.Location = new System.Drawing.Point(476, 138);
-            this.guna2CheckBox5.Name = "guna2CheckBox5";
-            this.guna2CheckBox5.Size = new System.Drawing.Size(203, 37);
-            this.guna2CheckBox5.TabIndex = 65;
-            this.guna2CheckBox5.Text = "Loại giường";
-            this.guna2CheckBox5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox5.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox5.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox5.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // guna2CheckBox3
-            // 
-            this.guna2CheckBox3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox3.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox3.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CheckBox3.Location = new System.Drawing.Point(243, 138);
-            this.guna2CheckBox3.Name = "guna2CheckBox3";
-            this.guna2CheckBox3.Size = new System.Drawing.Size(203, 37);
-            this.guna2CheckBox3.TabIndex = 65;
-            this.guna2CheckBox3.Text = "Giờ nhận phòng";
-            this.guna2CheckBox3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox3.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox3.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox3.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // guna2CheckBox2
-            // 
-            this.guna2CheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox2.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox2.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CheckBox2.Location = new System.Drawing.Point(9, 181);
-            this.guna2CheckBox2.Name = "guna2CheckBox2";
-            this.guna2CheckBox2.Size = new System.Drawing.Size(203, 37);
-            this.guna2CheckBox2.TabIndex = 65;
-            this.guna2CheckBox2.Text = "Tầng lầu";
-            this.guna2CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox2.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox2.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            // 
-            // guna2CheckBox1
-            // 
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CheckBox1.Location = new System.Drawing.Point(9, 138);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(215, 37);
-            this.guna2CheckBox1.TabIndex = 65;
-            this.guna2CheckBox1.Text = "Phòng không hút thuốc";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.btn_ApplyCode.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ApplyCode.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ApplyCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ApplyCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ApplyCode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_ApplyCode.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ApplyCode.ForeColor = System.Drawing.Color.White;
+            this.btn_ApplyCode.Location = new System.Drawing.Point(498, 195);
+            this.btn_ApplyCode.Name = "btn_ApplyCode";
+            this.btn_ApplyCode.Size = new System.Drawing.Size(180, 45);
+            this.btn_ApplyCode.TabIndex = 66;
+            this.btn_ApplyCode.Text = "Xác nhận";
+            this.btn_ApplyCode.Click += new System.EventHandler(this.btn_ApplyCode_Click);
             // 
             // label12
             // 
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(5, 47);
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(7, 140);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(673, 79);
-            this.label12.TabIndex = 64;
-            this.label12.Text = "Khi nhận phòng, khách sạn sẽ thông báo liệu yêu cầu này có được đáp ứng hay không" +
-    ". Một số yêu cầu cần trả thêm phí để sử dụng nhưng bạn hoàn toàn có thể hủy yêu " +
-    "cầu sau đó.";
+            this.label12.Size = new System.Drawing.Size(216, 35);
+            this.label12.TabIndex = 63;
+            this.label12.Text = "Nhập mã tại đây";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label11
             // 
@@ -579,13 +506,13 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(317, 35);
             this.label11.TabIndex = 63;
-            this.label11.Text = "Bạn yêu cầu nào không?";
+            this.label11.Text = "Nhập mã giảm giá";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(31, 132);
+            this.label2.Location = new System.Drawing.Point(19, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(825, 34);
             this.label2.TabIndex = 54;
@@ -596,7 +523,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 74);
+            this.label1.Location = new System.Drawing.Point(17, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(327, 49);
             this.label1.TabIndex = 54;
@@ -606,7 +533,7 @@
             // guna2Separator2
             // 
             this.guna2Separator2.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Separator2.Location = new System.Drawing.Point(958, 35);
+            this.guna2Separator2.Location = new System.Drawing.Point(946, 49);
             this.guna2Separator2.Name = "guna2Separator2";
             this.guna2Separator2.Size = new System.Drawing.Size(52, 10);
             this.guna2Separator2.TabIndex = 52;
@@ -614,7 +541,7 @@
             // guna2Separator1
             // 
             this.guna2Separator1.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Separator1.Location = new System.Drawing.Point(749, 35);
+            this.guna2Separator1.Location = new System.Drawing.Point(737, 49);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(58, 10);
             this.guna2Separator1.TabIndex = 53;
@@ -630,7 +557,7 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.RoyalBlue;
             this.guna2Button3.Image = global::KhachSan.Properties.Resources._3;
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(1023, 12);
+            this.guna2Button3.Location = new System.Drawing.Point(1011, 26);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(198, 49);
             this.guna2Button3.TabIndex = 49;
@@ -647,7 +574,7 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.guna2Button2.Image = global::KhachSan.Properties.Resources._2;
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(813, 12);
+            this.guna2Button2.Location = new System.Drawing.Point(801, 26);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(139, 49);
             this.guna2Button2.TabIndex = 50;
@@ -664,7 +591,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.guna2Button1.Image = global::KhachSan.Properties.Resources._1;
             this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(607, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(595, 26);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(139, 49);
             this.guna2Button1.TabIndex = 51;
@@ -675,7 +602,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::KhachSan.Properties.Resources.main_logo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(195, 1);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(183, 15);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(38, 44);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -687,11 +614,23 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(35, 12);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(23, 26);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(213, 49);
             this.guna2HtmlLabel1.TabIndex = 47;
             this.guna2HtmlLabel1.Text = "NAME _ APP";
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label13.Location = new System.Drawing.Point(5, 56);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(686, 64);
+            this.label13.TabIndex = 68;
+            this.label13.Text = "Hãy cùng săn sale các mã giảm giã từ các khách sạn trong và ngoài nước cùng Trave" +
+    "l App trên các nền tảng như: Shopee, Lazada, Facebook, Instagram, Momo, ZaloPay\r" +
+    "\n";
             // 
             // FPay
             // 
@@ -705,9 +644,9 @@
             this.Text = "Pay";
             this.Load += new System.EventHandler(this.Pay_Load);
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.Panel_DetailHotelPay.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.Panel_DetailHotelPay.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -728,9 +667,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel Panel_DetailHotelPay;
-        private User_Control.UC_Pay uC_Pay1;
         private System.Windows.Forms.Panel panel6;
         private Guna.UI2.WinForms.Guna2Button btn_Pay;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
@@ -743,13 +679,13 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel Panel_DetailHotelPay;
+        private User_Control.UC_Pay uC_Pay1;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox4;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox6;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox5;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox3;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_MaGG;
+        private Guna.UI2.WinForms.Guna2Button btn_ApplyCode;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label2;
@@ -761,6 +697,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
+        private System.Windows.Forms.Label label13;
     }
 }

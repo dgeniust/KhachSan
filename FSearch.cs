@@ -14,23 +14,27 @@ namespace KhachSan
 {
     public partial class FSearch : Form
     {
-        HotelDAO htDAO = new HotelDAO(); 
-
+        HotelDAO htDAO = new HotelDAO();
+        DiscountDAO dcD = new DiscountDAO();
         Search search;
+        string tentk;
         public FSearch()
         {
             InitializeComponent();
         }
-        public FSearch(Search VALUE)
+        public FSearch(Search sr,string TENTK)
         {
             InitializeComponent();
-            search = VALUE;
+            this.search = sr;
+            this.tentk = TENTK;
         }
         private void FSearch_Load(object sender, EventArgs e)
         {
             /*string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + search.address + "'";*/
             string query = "SELECT * FROM KHACHSAN ";
             htDAO.GeneratePanel(query, Panel_Hotel, search);
+            string disc = "Select * from MaGiamGia";
+            dcD.GenerateDiscountPanel(disc, Panel_Discount,tentk);
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)

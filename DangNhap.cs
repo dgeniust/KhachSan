@@ -14,10 +14,6 @@ namespace KhachSan
             InitializeComponent();
             uC_Login1.BTN_LOGIN.Click += LoginAccount;
             uC_Register1.BTN_REGISTER.Click += RegisterAccount;
-            Timer tm = new Timer();
-            tm.Interval = 1000;
-            tm.Tick += new EventHandler(changeImage);
-            tm.Start();
 
             uC_Register1.link_Login1.Click += showLogin;            //ấn vào show User Control Đăng nhập
             uC_Register1.pbox_Register_Exit.Click += Exit_Register; //nút thoát App của Đăng kí

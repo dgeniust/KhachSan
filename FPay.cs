@@ -13,11 +13,12 @@ namespace KhachSan
 {
     public partial class FPay : Form
     {
-        DBConnection db = new DBConnection();
         DatPhongDAO dpDao = new DatPhongDAO();
+        PayDAO pd = new PayDAO();
         Search search;
         Room room;
         DatPhong dp;
+        int result;
         public FPay()
         {
             InitializeComponent();
@@ -41,28 +42,33 @@ namespace KhachSan
             this.Hide();
             dpDao.SendEmail(room,search, dp.email);
         }
-
         private void Pay_Load(object sender, EventArgs e)
         {
-            Panel_DetailHotelPay.Controls.Clear();
             string query = "SELECT * FROM PHONG WHERE TENPHONG ='" + room.name + "'";
-            DataTable dt = new DataTable();
-            dt = db.LoadData(query);
-            foreach (DataRow dr in dt.Rows)
-            {
-                Room room = new Room(dr);
-                UC_Pay pay = new UC_Pay(room, search);
-                Panel_DetailHotelPay.Controls.Add(pay);
-                pay.Dock = DockStyle.Fill;
-            }
+            pd.GeneratePayPanel(query, Panel_DetailHotelPay, search);
             this.lbl_Pay_Price.Text = room.price + " VND";
-            int result = Convert.ToInt32(room.price) + 31905;
+            result = Convert.ToInt32(room.price) + 31905;
             this.lbl_Pay_Total.Text = Convert.ToString(result) + " VND";
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btn_ApplyCode_Click(object sender, EventArgs e)
+        {
+            int ketquacuoicung = result - pd.CheckDiscountCode(txt_MaGG.Text, result);
+            if(ketquacuoicung != result)
+            {
+                MessageBox.Show("Bạn đã áp dụng mã " + txt_MaGG.Text + " thành công. Số tiền được giảm là: " + pd.CheckDiscountCode(txt_MaGG.Text, result) + " VND");
+                this.lbl_Pay_Total.Text = ketquacuoicung.ToString() + " VND";
+            }
+            else
+            {
+                MessageBox.Show("Bạn không đủ điều kiện để áp dụng mã giảm giá");
+            }
+            
         }
     }
 }

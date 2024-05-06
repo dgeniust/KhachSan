@@ -13,7 +13,6 @@ namespace KhachSan.User_Control
 {
     public partial class UC_DetailHotel : UserControl
     {
-        public Guna2Button BookNow => btn_BookNow;
         Room room;
         Search search;
         HotelDAO htDAO = new HotelDAO();

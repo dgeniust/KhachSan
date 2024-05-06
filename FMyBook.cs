@@ -34,7 +34,7 @@ namespace KhachSan
         
         private void FMyBook_Load(object sender, EventArgs e)
         {
-            /*string query = string.Format("SELECT * FROM DATPHONG WHERE Email='" + email + "'");*/
+            string query = string.Format("SELECT * FROM DATPHONG WHERE Email='" + dp.email + "'");
             /*string query = string.Format("SELECT * FROM DATPHONG WHERE Email='hdq@gmail.com'");*/
             dpDAO.GenerateBookPanel(query,Panel_MyRoom);
         }

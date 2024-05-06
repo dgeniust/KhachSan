@@ -18,21 +18,25 @@ namespace KhachSan
         DBConnection db = new DBConnection();
         TaiKhoan tk;
         DatPhong dp;
-        string value;
+        string tentk;
+        int p, k, people;
+        bool expand = false;
+        int date, month, year;
+        string endday = "";
         public FBookRoom()
         {
             InitializeComponent();
         }
-        public FBookRoom(string VALUE)
+        public FBookRoom(string TENTK)
         {
             InitializeComponent();
-            this.value = VALUE;
+            this.tentk = TENTK;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            btn_Information.Text = value;
-            string query = string.Format("Select * from taikhoan where tentaikhoan='" + value + "'");
+            btn_Information.Text = tentk;
+            string query = string.Format("Select * from taikhoan where tentaikhoan='" + tentk + "'");
             DataTable dt = new DataTable();
             dt = db.LoadData(query);
             foreach (DataRow dr in dt.Rows)
@@ -41,7 +45,6 @@ namespace KhachSan
                 this.tk = TK;
             }
         }
-        bool expand = false;
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
@@ -74,8 +77,6 @@ namespace KhachSan
             timer1.Start();
         }
 
-        int date, month, year;
-        string endday = "";
 
         private void btn_Profile_Click(object sender, EventArgs e)
         {
@@ -110,7 +111,6 @@ namespace KhachSan
             fi.Show();
         }
 
-        int p, k, people;
 
         private void btn_MyHotel_Click(object sender, EventArgs e)
         {
@@ -140,7 +140,7 @@ namespace KhachSan
             people = p + k;
             //Search sr = new Search(datetimepicker_ReceiveRoom.Value.Date,Convert.ToInt32(cmb_Night.Text), cmb_Location.Text);
             Search sr = new Search(datetimepicker_ReceiveRoom.Value.Date,Convert.ToDateTime(endday), Convert.ToInt32(cmb_Night.Text), cmb_Location.Text, people, Convert.ToInt32(cmb_Room.Text));
-            FSearch fs = new FSearch(sr);
+            FSearch fs = new FSearch(sr,tentk);
             fs.Show();
             this.Hide();
         }
