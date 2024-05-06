@@ -10,12 +10,14 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices.Expando;
 
 namespace KhachSan
 {
     public class ItemDAO
     {
         DBConnection db = new DBConnection();
+        bool expand = false;
         public Image LoadImageFromFile(string filePath)
         {
             try
@@ -81,6 +83,27 @@ namespace KhachSan
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex);
+            }
+        }
+        public void ShowInfomation(FlowLayoutPanel dragdownCon, Timer timer1)
+        {
+            if (expand == false)
+            {
+                dragdownCon.Height += 20;
+                if (dragdownCon.Height >= dragdownCon.MaximumSize.Height)
+                {
+                    timer1.Stop();
+                    expand = true;
+                }
+            }
+            else
+            {
+                dragdownCon.Height -= 20;
+                if (dragdownCon.Height <= dragdownCon.MinimumSize.Height)
+                {
+                    timer1.Stop();
+                    expand = false;
+                }
             }
         }
     }

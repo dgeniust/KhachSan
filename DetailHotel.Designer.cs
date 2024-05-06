@@ -30,16 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailHotel));
             this.Panel_DetailRoom = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Panel_EachRoom = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.uC_DetailHotel1 = new KhachSan.User_Control.UC_DetailHotel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -47,6 +41,19 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ratingStar = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.btn_ChooseRoom = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TypeOf = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_Price = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_HotelName_small = new System.Windows.Forms.Label();
+            this.lbl_HotelName = new System.Windows.Forms.Label();
+            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -54,15 +61,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ratingStar = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.btn_ChooseRoom = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Address = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_TypeOf = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_Price = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl_HotelName_small = new System.Windows.Forms.Label();
-            this.lbl_HotelName = new System.Windows.Forms.Label();
-            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.uC_DetailHotel1 = new KhachSan.User_Control.UC_DetailHotel();
             this.Panel_DetailRoom.SuspendLayout();
             this.Panel_EachRoom.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -94,10 +94,27 @@
             this.Panel_DetailRoom.Controls.Add(this.label3);
             this.Panel_DetailRoom.Controls.Add(this.lbl_HotelName_small);
             this.Panel_DetailRoom.Controls.Add(this.lbl_HotelName);
-            this.Panel_DetailRoom.Location = new System.Drawing.Point(0, 0);
+            this.Panel_DetailRoom.Location = new System.Drawing.Point(0, 1);
             this.Panel_DetailRoom.Name = "Panel_DetailRoom";
             this.Panel_DetailRoom.Size = new System.Drawing.Size(1373, 1879);
             this.Panel_DetailRoom.TabIndex = 3;
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.Red;
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Location = new System.Drawing.Point(1325, 3);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
+            this.btn_Exit.TabIndex = 13;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // Panel_EachRoom
             // 
@@ -118,13 +135,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1287, 390);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // uC_DetailHotel1
-            // 
-            this.uC_DetailHotel1.Location = new System.Drawing.Point(0, 0);
-            this.uC_DetailHotel1.Name = "uC_DetailHotel1";
-            this.uC_DetailHotel1.Size = new System.Drawing.Size(1284, 390);
-            this.uC_DetailHotel1.TabIndex = 0;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -140,6 +150,172 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(738, 164);
             this.panel3.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(229, 23);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Tiện ích chính";
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button5.Location = new System.Drawing.Point(579, 3);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(156, 41);
+            this.guna2Button5.TabIndex = 1;
+            this.guna2Button5.Text = "Xem thêm >>";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.lbl_Desc);
+            this.panel1.Controls.Add(this.guna2Button4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(99, 646);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(397, 164);
+            this.panel1.TabIndex = 23;
+            // 
+            // lbl_Desc
+            // 
+            this.lbl_Desc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Desc.Location = new System.Drawing.Point(3, 55);
+            this.lbl_Desc.Name = "lbl_Desc";
+            this.lbl_Desc.Size = new System.Drawing.Size(391, 109);
+            this.lbl_Desc.TabIndex = 2;
+            this.lbl_Desc.Text = resources.GetString("lbl_Desc.Text");
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.guna2Button4.Location = new System.Drawing.Point(238, 3);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(156, 41);
+            this.guna2Button4.TabIndex = 1;
+            this.guna2Button4.Text = "Xem thêm >>";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(229, 23);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Giới thiệu cơ sở lưu trú";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox7);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(99, 198);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1190, 423);
+            this.panel2.TabIndex = 22;
+            // 
+            // ratingStar
+            // 
+            this.ratingStar.Location = new System.Drawing.Point(226, 112);
+            this.ratingStar.Name = "ratingStar";
+            this.ratingStar.Size = new System.Drawing.Size(120, 28);
+            this.ratingStar.TabIndex = 21;
+            // 
+            // btn_ChooseRoom
+            // 
+            this.btn_ChooseRoom.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ChooseRoom.BorderRadius = 10;
+            this.btn_ChooseRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ChooseRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ChooseRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ChooseRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ChooseRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_ChooseRoom.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ChooseRoom.ForeColor = System.Drawing.Color.White;
+            this.btn_ChooseRoom.Location = new System.Drawing.Point(1018, 131);
+            this.btn_ChooseRoom.Name = "btn_ChooseRoom";
+            this.btn_ChooseRoom.Size = new System.Drawing.Size(271, 48);
+            this.btn_ChooseRoom.TabIndex = 18;
+            this.btn_ChooseRoom.Text = "Chọn phòng";
+            // 
+            // btn_TypeOf
+            // 
+            this.btn_TypeOf.BackColor = System.Drawing.Color.Transparent;
+            this.btn_TypeOf.BorderRadius = 15;
+            this.btn_TypeOf.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TypeOf.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TypeOf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TypeOf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TypeOf.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btn_TypeOf.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_TypeOf.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_TypeOf.Location = new System.Drawing.Point(97, 109);
+            this.btn_TypeOf.Name = "btn_TypeOf";
+            this.btn_TypeOf.Size = new System.Drawing.Size(108, 31);
+            this.btn_TypeOf.TabIndex = 20;
+            this.btn_TypeOf.Text = "Khách sạn";
+            // 
+            // lbl_Price
+            // 
+            this.lbl_Price.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lbl_Price.Location = new System.Drawing.Point(1087, 78);
+            this.lbl_Price.Name = "lbl_Price";
+            this.lbl_Price.Size = new System.Drawing.Size(223, 38);
+            this.lbl_Price.TabIndex = 14;
+            this.lbl_Price.Text = "238.095  VND";
+            this.lbl_Price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(1089, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(223, 38);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Giá/phòng/đêm từ";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_HotelName_small
+            // 
+            this.lbl_HotelName_small.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_HotelName_small.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl_HotelName_small.Location = new System.Drawing.Point(95, 68);
+            this.lbl_HotelName_small.Name = "lbl_HotelName_small";
+            this.lbl_HotelName_small.Size = new System.Drawing.Size(315, 38);
+            this.lbl_HotelName_small.TabIndex = 16;
+            this.lbl_HotelName_small.Text = "Davue Hotel Da Nang";
+            this.lbl_HotelName_small.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_HotelName
+            // 
+            this.lbl_HotelName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_HotelName.Location = new System.Drawing.Point(91, 21);
+            this.lbl_HotelName.Name = "lbl_HotelName";
+            this.lbl_HotelName.Size = new System.Drawing.Size(306, 57);
+            this.lbl_HotelName.TabIndex = 17;
+            this.lbl_HotelName.Text = "Davue Hotel Da Nang";
+            this.lbl_HotelName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2Button11
             // 
@@ -273,88 +449,6 @@
             this.guna2Button8.Text = "Máy lạnh";
             this.guna2Button8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(229, 23);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Tiện ích chính";
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button5.Location = new System.Drawing.Point(579, 3);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(156, 41);
-            this.guna2Button5.TabIndex = 1;
-            this.guna2Button5.Text = "Xem thêm >>";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.lbl_Desc);
-            this.panel1.Controls.Add(this.guna2Button4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(99, 646);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(397, 164);
-            this.panel1.TabIndex = 23;
-            // 
-            // lbl_Desc
-            // 
-            this.lbl_Desc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Desc.Location = new System.Drawing.Point(3, 55);
-            this.lbl_Desc.Name = "lbl_Desc";
-            this.lbl_Desc.Size = new System.Drawing.Size(391, 109);
-            this.lbl_Desc.TabIndex = 2;
-            this.lbl_Desc.Text = resources.GetString("lbl_Desc.Text");
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.guna2Button4.Location = new System.Drawing.Point(238, 3);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(156, 41);
-            this.guna2Button4.TabIndex = 1;
-            this.guna2Button4.Text = "Xem thêm >>";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(229, 23);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Giới thiệu cơ sở lưu trú";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox7);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(99, 198);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1190, 423);
-            this.panel2.TabIndex = 22;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::KhachSan.Properties.Resources.cicilia_front_img;
@@ -425,30 +519,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // ratingStar
-            // 
-            this.ratingStar.Location = new System.Drawing.Point(226, 112);
-            this.ratingStar.Name = "ratingStar";
-            this.ratingStar.Size = new System.Drawing.Size(120, 28);
-            this.ratingStar.TabIndex = 21;
-            // 
-            // btn_ChooseRoom
-            // 
-            this.btn_ChooseRoom.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ChooseRoom.BorderRadius = 10;
-            this.btn_ChooseRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ChooseRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ChooseRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ChooseRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ChooseRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_ChooseRoom.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ChooseRoom.ForeColor = System.Drawing.Color.White;
-            this.btn_ChooseRoom.Location = new System.Drawing.Point(1018, 131);
-            this.btn_ChooseRoom.Name = "btn_ChooseRoom";
-            this.btn_ChooseRoom.Size = new System.Drawing.Size(271, 48);
-            this.btn_ChooseRoom.TabIndex = 18;
-            this.btn_ChooseRoom.Text = "Chọn phòng";
-            // 
             // btn_Address
             // 
             this.btn_Address.BackColor = System.Drawing.Color.Transparent;
@@ -470,89 +540,19 @@
             this.btn_Address.Text = "57-59 Đỗ Bí, Mỹ An, Ngũ Hành Sơn, Đà Nẵng, Việt Nam, 550000";
             this.btn_Address.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // btn_TypeOf
+            // uC_DetailHotel1
             // 
-            this.btn_TypeOf.BackColor = System.Drawing.Color.Transparent;
-            this.btn_TypeOf.BorderRadius = 15;
-            this.btn_TypeOf.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TypeOf.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TypeOf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TypeOf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TypeOf.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.btn_TypeOf.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_TypeOf.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btn_TypeOf.Location = new System.Drawing.Point(97, 109);
-            this.btn_TypeOf.Name = "btn_TypeOf";
-            this.btn_TypeOf.Size = new System.Drawing.Size(108, 31);
-            this.btn_TypeOf.TabIndex = 20;
-            this.btn_TypeOf.Text = "Khách sạn";
-            // 
-            // lbl_Price
-            // 
-            this.lbl_Price.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbl_Price.Location = new System.Drawing.Point(1087, 78);
-            this.lbl_Price.Name = "lbl_Price";
-            this.lbl_Price.Size = new System.Drawing.Size(223, 38);
-            this.lbl_Price.TabIndex = 14;
-            this.lbl_Price.Text = "238.095  VND";
-            this.lbl_Price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1089, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 38);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Giá/phòng/đêm từ";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_HotelName_small
-            // 
-            this.lbl_HotelName_small.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_HotelName_small.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_HotelName_small.Location = new System.Drawing.Point(95, 68);
-            this.lbl_HotelName_small.Name = "lbl_HotelName_small";
-            this.lbl_HotelName_small.Size = new System.Drawing.Size(315, 38);
-            this.lbl_HotelName_small.TabIndex = 16;
-            this.lbl_HotelName_small.Text = "Davue Hotel Da Nang";
-            this.lbl_HotelName_small.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_HotelName
-            // 
-            this.lbl_HotelName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_HotelName.Location = new System.Drawing.Point(91, 21);
-            this.lbl_HotelName.Name = "lbl_HotelName";
-            this.lbl_HotelName.Size = new System.Drawing.Size(306, 57);
-            this.lbl_HotelName.TabIndex = 17;
-            this.lbl_HotelName.Text = "Davue Hotel Da Nang";
-            this.lbl_HotelName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Exit.FillColor = System.Drawing.Color.Red;
-            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.btn_Exit.Location = new System.Drawing.Point(1325, 3);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_Exit.Size = new System.Drawing.Size(45, 45);
-            this.btn_Exit.TabIndex = 13;
-            this.btn_Exit.Text = "X";
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            this.uC_DetailHotel1.Location = new System.Drawing.Point(0, 0);
+            this.uC_DetailHotel1.Name = "uC_DetailHotel1";
+            this.uC_DetailHotel1.Size = new System.Drawing.Size(1284, 390);
+            this.uC_DetailHotel1.TabIndex = 0;
             // 
             // DetailHotel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1394, 737);
+            this.ClientSize = new System.Drawing.Size(1396, 737);
             this.Controls.Add(this.Panel_DetailRoom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DetailHotel";

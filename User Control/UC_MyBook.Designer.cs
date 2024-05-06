@@ -102,6 +102,7 @@
             this.btn_Cancel.Size = new System.Drawing.Size(140, 36);
             this.btn_Cancel.TabIndex = 2;
             this.btn_Cancel.Text = "Hủy phòng";
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // lbl_DateReturn
             // 

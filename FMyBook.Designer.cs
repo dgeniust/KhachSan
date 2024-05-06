@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dragdownCon = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Information = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Profile = new System.Windows.Forms.Button();
-            this.btn_Card = new System.Windows.Forms.Button();
-            this.btn_ListTrans = new System.Windows.Forms.Button();
-            this.btn_OwnBook = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -44,107 +38,18 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.dragdownCon = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Information = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Profile = new System.Windows.Forms.Button();
+            this.btn_MyHotel = new System.Windows.Forms.Button();
+            this.btn_ListTrans = new System.Windows.Forms.Button();
+            this.btn_OwnBook = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.dragdownCon.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dragdownCon
-            // 
-            this.dragdownCon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dragdownCon.Controls.Add(this.panel1);
-            this.dragdownCon.Controls.Add(this.btn_Profile);
-            this.dragdownCon.Controls.Add(this.btn_Card);
-            this.dragdownCon.Controls.Add(this.btn_ListTrans);
-            this.dragdownCon.Controls.Add(this.btn_OwnBook);
-            this.dragdownCon.Location = new System.Drawing.Point(1014, 32);
-            this.dragdownCon.MaximumSize = new System.Drawing.Size(200, 247);
-            this.dragdownCon.MinimumSize = new System.Drawing.Size(200, 43);
-            this.dragdownCon.Name = "dragdownCon";
-            this.dragdownCon.Size = new System.Drawing.Size(200, 43);
-            this.dragdownCon.TabIndex = 31;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_Information);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 44);
-            this.panel1.TabIndex = 2;
-            // 
-            // btn_Information
-            // 
-            this.btn_Information.BackColor = System.Drawing.Color.White;
-            this.btn_Information.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.btn_Information.BorderRadius = 5;
-            this.btn_Information.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Information.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Information.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Information.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Information.FillColor = System.Drawing.Color.Transparent;
-            this.btn_Information.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btn_Information.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.btn_Information.Image = global::KhachSan.Properties.Resources.account;
-            this.btn_Information.ImageSize = new System.Drawing.Size(45, 45);
-            this.btn_Information.Location = new System.Drawing.Point(0, 0);
-            this.btn_Information.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_Information.Name = "btn_Information";
-            this.btn_Information.Size = new System.Drawing.Size(200, 43);
-            this.btn_Information.TabIndex = 20;
-            this.btn_Information.Text = "Người dùng";
-            // 
-            // btn_Profile
-            // 
-            this.btn_Profile.BackColor = System.Drawing.Color.White;
-            this.btn_Profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Profile.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Profile.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btn_Profile.Location = new System.Drawing.Point(3, 47);
-            this.btn_Profile.Name = "btn_Profile";
-            this.btn_Profile.Size = new System.Drawing.Size(194, 44);
-            this.btn_Profile.TabIndex = 3;
-            this.btn_Profile.Text = "Chỉnh sửa hồ sơ";
-            this.btn_Profile.UseVisualStyleBackColor = false;
-            // 
-            // btn_Card
-            // 
-            this.btn_Card.BackColor = System.Drawing.Color.White;
-            this.btn_Card.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Card.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Card.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btn_Card.Location = new System.Drawing.Point(3, 97);
-            this.btn_Card.Name = "btn_Card";
-            this.btn_Card.Size = new System.Drawing.Size(194, 44);
-            this.btn_Card.TabIndex = 4;
-            this.btn_Card.Text = "Thẻ của tôi";
-            this.btn_Card.UseVisualStyleBackColor = false;
-            // 
-            // btn_ListTrans
-            // 
-            this.btn_ListTrans.BackColor = System.Drawing.Color.White;
-            this.btn_ListTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ListTrans.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ListTrans.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btn_ListTrans.Location = new System.Drawing.Point(3, 147);
-            this.btn_ListTrans.Name = "btn_ListTrans";
-            this.btn_ListTrans.Size = new System.Drawing.Size(194, 44);
-            this.btn_ListTrans.TabIndex = 5;
-            this.btn_ListTrans.Text = "Danh sách giao dịch";
-            this.btn_ListTrans.UseVisualStyleBackColor = false;
-            // 
-            // btn_OwnBook
-            // 
-            this.btn_OwnBook.BackColor = System.Drawing.Color.White;
-            this.btn_OwnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_OwnBook.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_OwnBook.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btn_OwnBook.Location = new System.Drawing.Point(3, 197);
-            this.btn_OwnBook.Name = "btn_OwnBook";
-            this.btn_OwnBook.Size = new System.Drawing.Size(194, 47);
-            this.btn_OwnBook.TabIndex = 6;
-            this.btn_OwnBook.Text = "Đặt chỗ của tôi";
-            this.btn_OwnBook.UseVisualStyleBackColor = false;
             // 
             // guna2Button6
             // 
@@ -270,15 +175,118 @@
             this.btn_Exit.Text = "X";
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
+            // dragdownCon
+            // 
+            this.dragdownCon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dragdownCon.Controls.Add(this.panel1);
+            this.dragdownCon.Controls.Add(this.btn_Profile);
+            this.dragdownCon.Controls.Add(this.btn_MyHotel);
+            this.dragdownCon.Controls.Add(this.btn_ListTrans);
+            this.dragdownCon.Controls.Add(this.btn_OwnBook);
+            this.dragdownCon.Location = new System.Drawing.Point(998, 23);
+            this.dragdownCon.MaximumSize = new System.Drawing.Size(200, 247);
+            this.dragdownCon.MinimumSize = new System.Drawing.Size(200, 43);
+            this.dragdownCon.Name = "dragdownCon";
+            this.dragdownCon.Size = new System.Drawing.Size(200, 43);
+            this.dragdownCon.TabIndex = 50;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn_Information);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 44);
+            this.panel1.TabIndex = 2;
+            // 
+            // btn_Information
+            // 
+            this.btn_Information.BackColor = System.Drawing.Color.White;
+            this.btn_Information.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Information.BorderRadius = 5;
+            this.btn_Information.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Information.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Information.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Information.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Information.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Information.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btn_Information.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.btn_Information.Image = global::KhachSan.Properties.Resources.account;
+            this.btn_Information.ImageSize = new System.Drawing.Size(45, 45);
+            this.btn_Information.Location = new System.Drawing.Point(0, 0);
+            this.btn_Information.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Information.Name = "btn_Information";
+            this.btn_Information.Size = new System.Drawing.Size(200, 43);
+            this.btn_Information.TabIndex = 20;
+            this.btn_Information.Text = "Người dùng";
+            this.btn_Information.Click += new System.EventHandler(this.btn_Information_Click);
+            // 
+            // btn_Profile
+            // 
+            this.btn_Profile.BackColor = System.Drawing.Color.White;
+            this.btn_Profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Profile.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Profile.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Profile.Location = new System.Drawing.Point(3, 47);
+            this.btn_Profile.Name = "btn_Profile";
+            this.btn_Profile.Size = new System.Drawing.Size(194, 44);
+            this.btn_Profile.TabIndex = 3;
+            this.btn_Profile.Text = "Thông tin cá nhân";
+            this.btn_Profile.UseVisualStyleBackColor = false;
+            // 
+            // btn_MyHotel
+            // 
+            this.btn_MyHotel.BackColor = System.Drawing.Color.White;
+            this.btn_MyHotel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MyHotel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MyHotel.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_MyHotel.Location = new System.Drawing.Point(3, 97);
+            this.btn_MyHotel.Name = "btn_MyHotel";
+            this.btn_MyHotel.Size = new System.Drawing.Size(194, 44);
+            this.btn_MyHotel.TabIndex = 4;
+            this.btn_MyHotel.Text = "Khách sạn của tôi";
+            this.btn_MyHotel.UseVisualStyleBackColor = false;
+            // 
+            // btn_ListTrans
+            // 
+            this.btn_ListTrans.BackColor = System.Drawing.Color.White;
+            this.btn_ListTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ListTrans.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ListTrans.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_ListTrans.Location = new System.Drawing.Point(3, 147);
+            this.btn_ListTrans.Name = "btn_ListTrans";
+            this.btn_ListTrans.Size = new System.Drawing.Size(194, 44);
+            this.btn_ListTrans.TabIndex = 5;
+            this.btn_ListTrans.Text = "Danh sách giao dịch";
+            this.btn_ListTrans.UseVisualStyleBackColor = false;
+            // 
+            // btn_OwnBook
+            // 
+            this.btn_OwnBook.BackColor = System.Drawing.Color.White;
+            this.btn_OwnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_OwnBook.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_OwnBook.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btn_OwnBook.Location = new System.Drawing.Point(3, 197);
+            this.btn_OwnBook.Name = "btn_OwnBook";
+            this.btn_OwnBook.Size = new System.Drawing.Size(194, 47);
+            this.btn_OwnBook.TabIndex = 6;
+            this.btn_OwnBook.Text = "Đặt chỗ của tôi";
+            this.btn_OwnBook.UseVisualStyleBackColor = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FMyBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1281, 610);
+            this.Controls.Add(this.dragdownCon);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.Panel_MyRoom);
             this.Controls.Add(this.lbl_Hello);
-            this.Controls.Add(this.dragdownCon);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2Button6);
             this.Controls.Add(this.guna2Button5);
@@ -289,22 +297,14 @@
             this.Name = "FMyBook";
             this.Text = "FMyBook";
             this.Load += new System.EventHandler(this.FMyBook_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.dragdownCon.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel dragdownCon;
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button btn_Information;
-        private System.Windows.Forms.Button btn_Profile;
-        private System.Windows.Forms.Button btn_Card;
-        private System.Windows.Forms.Button btn_ListTrans;
-        private System.Windows.Forms.Button btn_OwnBook;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
@@ -314,5 +314,13 @@
         private System.Windows.Forms.Label lbl_Hello;
         private System.Windows.Forms.Panel Panel_MyRoom;
         private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
+        private System.Windows.Forms.FlowLayoutPanel dragdownCon;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button btn_Information;
+        private System.Windows.Forms.Button btn_Profile;
+        private System.Windows.Forms.Button btn_MyHotel;
+        private System.Windows.Forms.Button btn_ListTrans;
+        private System.Windows.Forms.Button btn_OwnBook;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -17,6 +17,7 @@ namespace KhachSan
         DatPhong dp;
         //TaiKhoan tk;
         DatPhongDAO dpDAO = new DatPhongDAO();
+        ItemDAO itemDAO = new ItemDAO();
         string query = "";
         string name = "";
         public FMyBook()
@@ -30,18 +31,27 @@ namespace KhachSan
             this.query = QUERY;
             this.name = NAME;
             this.lbl_Hello.Text = "Xin chào " + NAME;
+            this.btn_Information.Text = NAME;
         }
         
         private void FMyBook_Load(object sender, EventArgs e)
         {
-            string query = string.Format("SELECT * FROM DATPHONG WHERE Email='" + dp.email + "'");
-            /*string query = string.Format("SELECT * FROM DATPHONG WHERE Email='hdq@gmail.com'");*/
-            dpDAO.GenerateBookPanel(query,Panel_MyRoom);
+            dpDAO.GenerateBookPanel(query, Panel_MyRoom);
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            itemDAO.ShowInfomation(dragdownCon, timer1);
+        }
+
+        private void btn_Information_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
         }
     }
 }

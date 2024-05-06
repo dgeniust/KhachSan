@@ -26,7 +26,7 @@ namespace KhachSan
         public void Add(Hotel ht)
         {
             string thongbao = "Thêm khách sạn thành công";
-            string add = string.Format("INSERT INTO KHACHSAN VALUES('{0}','{1}',N'{2}',N'{3}',N'{4}',N'{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}',N'{14}','{15}','{16}','{17}','{18}','{19}','{20}','{21}')",ht.email,ht.id,ht.name,ht.address,ht.type, ht.detailaddress, ht.star, ht.price, ht.oldprice, ht.rate, ht.tienich1, ht.tienich2, ht.tienich3, ht.phone, ht.mota, ht.picture, ht.p1, ht.p2, ht.p3, ht.p4, ht.p5, ht.p6);
+            string add = string.Format("INSERT INTO KHACHSAN VALUES('{0}','{1}',N'{2}',N'{3}',N'{4}',N'{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}',N'{14}','{15}','{16}','{17}','{18}','{19}','{20}','{21}',N'{22}')",ht.email,ht.id,ht.name,ht.address,ht.type, ht.detailaddress, ht.star, ht.price, ht.oldprice, ht.rate, ht.tienich1, ht.tienich2, ht.tienich3, ht.phone, ht.mota, ht.picture, ht.p1, ht.p2, ht.p3, ht.p4, ht.p5, ht.p6,ht.uudai);
             db.ThucThi(add, thongbao);
         }
 

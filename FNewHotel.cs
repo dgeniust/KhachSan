@@ -20,7 +20,7 @@ namespace KhachSan
         private List<PictureBox> pictureBoxes = new List<PictureBox>();
         HotelDAO htDAO = new HotelDAO();
         TaiKhoan tk;
-        int id = 1;
+        int id = 6;
         public Guna2TextBox TXT_HotelName => txt_HotelName;
         public FNewHotel()
         {
@@ -52,7 +52,6 @@ namespace KhachSan
                 this.txt_TienIch3.Text = dr[12].ToString();
                 this.txt_Phone.Text = dr[13].ToString();
                 this.txt_Desc.Text = dr[14].ToString();
-
             }
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace KhachSan.User_Control
     {
         DatPhong dp;
         DatPhongDAO dpDAO = new DatPhongDAO();
+        public Guna2Button BTN_CANCLE => btn_Cancel;
         public UC_MyBook(DatPhong DP)
         {
             InitializeComponent();
@@ -31,6 +33,12 @@ namespace KhachSan.User_Control
         private void UC_MyBook_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Cancel_Click(object sender, EventArgs e)
+        {
+            DatPhong dphong = new DatPhong(dp.hoten, dp.email, dp.sdt,dp.hotelname, dp.roomname, dp.price, dp.ngaynhan, dp.ngaytra, dp.sodem, dp.guest, dp.giuong, dp.image);
+            dpDAO.Delete(dphong);
         }
     }
 }

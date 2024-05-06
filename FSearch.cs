@@ -16,6 +16,7 @@ namespace KhachSan
     {
         HotelDAO htDAO = new HotelDAO();
         DiscountDAO dcD = new DiscountDAO();
+        ItemDAO itemDAO = new ItemDAO();
         Search search;
         string tentk;
         public FSearch()
@@ -27,6 +28,7 @@ namespace KhachSan
             InitializeComponent();
             this.search = sr;
             this.tentk = TENTK;
+            this.btn_Information.Text = TENTK;
         }
         private void FSearch_Load(object sender, EventArgs e)
         {
@@ -66,6 +68,31 @@ namespace KhachSan
         private void btn_All_Click(object sender, EventArgs e)
         {
             FSearch_Load(sender, e);
+        }
+
+        private void btn_Information_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            itemDAO.ShowInfomation(dragdownCon, timer1);
+        }
+
+        private void btn_Profile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_MyHotel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_OwnBook_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -41,6 +41,10 @@ namespace KhachSan
             fmb.Show();
             this.Hide();
             dpDao.SendEmail(room,search, dp.email);
+
+            FSuccess fcc = new FSuccess();
+            fcc.ShowDialog();
+            this.Hide();
         }
         private void Pay_Load(object sender, EventArgs e)
         {
@@ -59,7 +63,8 @@ namespace KhachSan
         private void btn_ApplyCode_Click(object sender, EventArgs e)
         {
             int ketquacuoicung = result - pd.CheckDiscountCode(txt_MaGG.Text, result);
-            if(ketquacuoicung != result)
+            //MessageBox.Show(ketquacuoicung.ToString());
+            if (ketquacuoicung != result)
             {
                 MessageBox.Show("Bạn đã áp dụng mã " + txt_MaGG.Text + " thành công. Số tiền được giảm là: " + pd.CheckDiscountCode(txt_MaGG.Text, result) + " VND");
                 this.lbl_Pay_Total.Text = ketquacuoicung.ToString() + " VND";
@@ -68,7 +73,7 @@ namespace KhachSan
             {
                 MessageBox.Show("Bạn không đủ điều kiện để áp dụng mã giảm giá");
             }
-            
+
         }
     }
 }

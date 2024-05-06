@@ -16,11 +16,11 @@ namespace KhachSan
     public partial class FBookRoom : Form
     {
         DBConnection db = new DBConnection();
+        ItemDAO itemDAO = new ItemDAO();
         TaiKhoan tk;
         DatPhong dp;
         string tentk;
         int p, k, people;
-        bool expand = false;
         int date, month, year;
         string endday = "";
         public FBookRoom()
@@ -31,6 +31,7 @@ namespace KhachSan
         {
             InitializeComponent();
             this.tentk = TENTK;
+            this.datetimepicker_ReceiveRoom.Value = DateTime.Now;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -48,24 +49,7 @@ namespace KhachSan
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            if (expand == false)
-            {
-                dragdownCon.Height += 20;
-                if (dragdownCon.Height >= dragdownCon.MaximumSize.Height)
-                {
-                    timer1.Stop();
-                    expand = true;
-                }
-            }
-            else
-            {
-                dragdownCon.Height -= 20;
-                if (dragdownCon.Height <= dragdownCon.MinimumSize.Height)
-                {
-                    timer1.Stop();
-                    expand = false;
-                }
-            }
+            itemDAO.ShowInfomation(dragdownCon, timer1);
         }
 
         private void dragdownCon_Click_1(object sender, EventArgs e)
@@ -88,8 +72,8 @@ namespace KhachSan
         private void btn_OwnBook_Click(object sender, EventArgs e)
         {
             string name = tk.hoten;
-            string query = string.Format("SELECT * FROM DATPHONG WHERE Email='" + tk.email + "'");
-            FMyBook fmb = new FMyBook(dp,name,query);
+            string query = "SELECT * FROM DATPHONG WHERE Email='" + tk.email + "'";
+            FMyBook fmb = new FMyBook(dp, name, query);
             fmb.Show();
             this.Hide();
         }
@@ -124,7 +108,7 @@ namespace KhachSan
             fnh.Show();
             if (fnh.TXT_HotelName.Text == "")
             {
-                MessageBox.Show("Bạn nghèo!");
+                MessageBox.Show("Bạn chưa sở hữu khách sạn!");
                 fnh.Close();
             }
             else

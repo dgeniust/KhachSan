@@ -121,6 +121,12 @@
     <Compile Include="FSearch.Designer.cs">
       <DependentUpon>FSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSuccess.Designer.cs">
+      <DependentUpon>FSuccess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hotel.cs" />
     <Compile Include="FPay.cs">
       <SubType>Form</SubType>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FPay.resx">
       <DependentUpon>FPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSuccess.resx">
+      <DependentUpon>FSuccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -477,6 +486,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\upload1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-success-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
