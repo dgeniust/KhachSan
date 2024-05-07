@@ -103,8 +103,7 @@ namespace KhachSan
 
         private void btn_MyHotel_Click(object sender, EventArgs e)
         {
-            string query = "Select * from khachsan where email ='"+tk.email+"'";
-            FNewHotel fnh = new FNewHotel(tk, query);
+            FNewHotel fnh = new FNewHotel(tk);
             fnh.Show();
             if (fnh.TXT_HotelName.Text == "")
             {

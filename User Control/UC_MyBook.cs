@@ -39,6 +39,9 @@ namespace KhachSan.User_Control
         {
             DatPhong dphong = new DatPhong(dp.hoten, dp.email, dp.sdt,dp.hotelname, dp.roomname, dp.price, dp.ngaynhan, dp.ngaytra, dp.sodem, dp.guest, dp.giuong, dp.image);
             dpDAO.Delete(dphong);
+            MessageBox.Show("Phòng của bạn sẽ đc hủy trong 24h tới");
+            this.btn_Cancel.FillColor = Color.DimGray;
+            this.btn_Cancel.Text = "Đang hủy";
         }
     }
 }

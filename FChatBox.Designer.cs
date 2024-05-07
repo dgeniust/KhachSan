@@ -44,7 +44,7 @@
             this.btn_Exit.FillColor = System.Drawing.Color.Red;
             this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.btn_Exit.Location = new System.Drawing.Point(716, 12);
+            this.btn_Exit.Location = new System.Drawing.Point(869, 12);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btn_Exit.Size = new System.Drawing.Size(45, 45);
@@ -54,10 +54,11 @@
             // 
             // listView
             // 
+            this.listView.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(26, 66);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(721, 367);
+            this.listView.Size = new System.Drawing.Size(888, 367);
             this.listView.TabIndex = 36;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.List;
@@ -65,7 +66,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(265, 19);
+            this.label1.Location = new System.Drawing.Point(348, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(294, 38);
             this.label1.TabIndex = 37;
@@ -81,7 +82,8 @@
             this.txt_Input.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Input.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Input.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Input.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Input.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Input.ForeColor = System.Drawing.Color.Black;
             this.txt_Input.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Input.Location = new System.Drawing.Point(26, 459);
             this.txt_Input.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -89,7 +91,7 @@
             this.txt_Input.PasswordChar = '\0';
             this.txt_Input.PlaceholderText = "";
             this.txt_Input.SelectedText = "";
-            this.txt_Input.Size = new System.Drawing.Size(604, 40);
+            this.txt_Input.Size = new System.Drawing.Size(755, 40);
             this.txt_Input.TabIndex = 38;
             // 
             // btn_Send
@@ -102,7 +104,7 @@
             this.btn_Send.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_Send.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Send.ForeColor = System.Drawing.Color.White;
-            this.btn_Send.Location = new System.Drawing.Point(636, 459);
+            this.btn_Send.Location = new System.Drawing.Point(803, 459);
             this.btn_Send.Name = "btn_Send";
             this.btn_Send.Size = new System.Drawing.Size(111, 40);
             this.btn_Send.TabIndex = 39;
@@ -113,7 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 529);
+            this.ClientSize = new System.Drawing.Size(926, 522);
             this.Controls.Add(this.btn_Send);
             this.Controls.Add(this.txt_Input);
             this.Controls.Add(this.label1);

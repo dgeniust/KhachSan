@@ -26,14 +26,16 @@ namespace KhachSan
         {
             InitializeComponent();
         }
-        public FNewHotel(TaiKhoan TK)
+        /*public FNewHotel(TaiKhoan TK)
         {
             InitializeComponent();
             this.tk = TK;
-        }
-        public FNewHotel(TaiKhoan TK, string query)
+        }*/
+        public FNewHotel(TaiKhoan TK)
         {
             InitializeComponent();
+            string query = "Select * from khachsan where email ='" + TK.email + "'";
+            this.tk = TK;
             DataTable dt = new DataTable();
             dt = db.LoadData(query);
             foreach (DataRow dr in dt.Rows)

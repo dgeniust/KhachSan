@@ -23,6 +23,7 @@ namespace KhachSan
         //Socket client;
         public List<Socket> clientList;
         string tentk;
+
         public FChatBox(string TENTK)
         {
             InitializeComponent();
@@ -94,7 +95,7 @@ namespace KhachSan
             if (txt_Input.Text != string.Empty)
             {
                 client.Send(Serialize(sender));
-                AddMess(txt_Input.Text);
+                AddMess(sender);
             }
         }
         public void Receive(Object obj)

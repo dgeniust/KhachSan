@@ -43,12 +43,13 @@
             this.txt_GuestAndRoom = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmb_Location = new Guna.UI2.WinForms.Guna2ComboBox();
             this.datetimepicker_ReceiveRoom = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.TRAVEL = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.dragdownCon = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Information = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Profile = new System.Windows.Forms.Button();
             this.btn_MyHotel = new System.Windows.Forms.Button();
             this.btn_ListTrans = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@
             this.cmb_Night = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btn_AddHotel = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Information = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Chat = new Guna.UI2.WinForms.Guna2Button();
@@ -307,17 +307,17 @@
             this.datetimepicker_ReceiveRoom.TabIndex = 14;
             this.datetimepicker_ReceiveRoom.Value = new System.DateTime(2024, 2, 29, 20, 12, 56, 497);
             // 
-            // guna2HtmlLabel1
+            // TRAVEL
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(39, 44);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(262, 33);
-            this.guna2HtmlLabel1.TabIndex = 17;
-            this.guna2HtmlLabel1.Text = "NAME _ APP";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TRAVEL.AutoSize = false;
+            this.TRAVEL.BackColor = System.Drawing.Color.Transparent;
+            this.TRAVEL.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TRAVEL.Location = new System.Drawing.Point(111, 44);
+            this.TRAVEL.Name = "TRAVEL";
+            this.TRAVEL.Size = new System.Drawing.Size(179, 33);
+            this.TRAVEL.TabIndex = 17;
+            this.TRAVEL.Text = "TRAVEL";
+            this.TRAVEL.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Button4
             // 
@@ -391,6 +391,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 44);
             this.panel1.TabIndex = 2;
+            // 
+            // btn_Information
+            // 
+            this.btn_Information.BackColor = System.Drawing.Color.White;
+            this.btn_Information.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btn_Information.BorderRadius = 5;
+            this.btn_Information.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Information.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Information.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Information.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Information.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Information.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btn_Information.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.btn_Information.Image = global::KhachSan.Properties.Resources.account;
+            this.btn_Information.ImageSize = new System.Drawing.Size(45, 45);
+            this.btn_Information.Location = new System.Drawing.Point(0, 0);
+            this.btn_Information.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Information.Name = "btn_Information";
+            this.btn_Information.Size = new System.Drawing.Size(200, 43);
+            this.btn_Information.TabIndex = 20;
+            this.btn_Information.Text = "Người dùng";
+            this.btn_Information.Click += new System.EventHandler(this.btn_Information_Click);
             // 
             // btn_Profile
             // 
@@ -539,28 +561,6 @@
             this.btn_AddHotel.Text = "Thêm khách sạn";
             this.btn_AddHotel.Click += new System.EventHandler(this.btn_AddHotel_Click);
             // 
-            // btn_Information
-            // 
-            this.btn_Information.BackColor = System.Drawing.Color.White;
-            this.btn_Information.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.btn_Information.BorderRadius = 5;
-            this.btn_Information.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Information.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Information.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Information.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Information.FillColor = System.Drawing.Color.Transparent;
-            this.btn_Information.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btn_Information.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.btn_Information.Image = global::KhachSan.Properties.Resources.account;
-            this.btn_Information.ImageSize = new System.Drawing.Size(45, 45);
-            this.btn_Information.Location = new System.Drawing.Point(0, 0);
-            this.btn_Information.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_Information.Name = "btn_Information";
-            this.btn_Information.Size = new System.Drawing.Size(200, 43);
-            this.btn_Information.TabIndex = 20;
-            this.btn_Information.Text = "Người dùng";
-            this.btn_Information.Click += new System.EventHandler(this.btn_Information_Click);
-            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
@@ -647,7 +647,7 @@
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.TRAVEL);
             this.Controls.Add(this.btn_Chat);
             this.Controls.Add(this.datetimepicker_ReceiveRoom);
             this.Controls.Add(this.cmb_Location);
@@ -693,7 +693,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmb_Location;
         private Guna.UI2.WinForms.Guna2DateTimePicker datetimepicker_ReceiveRoom;
         private Guna.UI2.WinForms.Guna2Button btn_Chat;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel TRAVEL;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
