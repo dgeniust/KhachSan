@@ -32,11 +32,14 @@ namespace KhachSan
         }
         private void FSearch_Load(object sender, EventArgs e)
         {
-            /*string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + search.address + "'";*/
-            string query = "SELECT * FROM KHACHSAN ";
+            string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + search.address + "'";
+            /*string query = "SELECT * FROM KHACHSAN ";*/
             htDAO.GeneratePanel(query, Panel_Hotel, search);
             string disc = "Select * from MaGiamGia";
             dcD.GenerateDiscountPanel(disc, Panel_Discount,tentk);
+            this.cmb_Location.Text = search.address;
+            this.dtp_DateTake.Value = search.startday;
+            this.dtp_DateBack.Value = search.endday;
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -49,7 +52,10 @@ namespace KhachSan
             string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + cmb_Location.Text + "'";
             htDAO.GeneratePanel(query, Panel_Hotel, search);
             search.startday = dtp_DateTake.Value.Date;
-            search.guest = Convert.ToInt32(cmb_People.Text);
+            search.endday = dtp_DateBack.Value.Date;
+            var start = dtp_DateTake.Value.Day;
+            var end = dtp_DateBack.Value.Day;
+            search.spendnight = end - start;
             this.Refresh();
         }
 

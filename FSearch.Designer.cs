@@ -33,7 +33,6 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
             this.dtp_DateTake = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.cmb_People = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmb_Location = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
@@ -57,6 +56,7 @@
             this.btn_ListTrans = new System.Windows.Forms.Button();
             this.btn_OwnBook = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.dtp_DateBack = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -90,8 +90,8 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.Controls.Add(this.btn_Search);
+            this.guna2CustomGradientPanel1.Controls.Add(this.dtp_DateBack);
             this.guna2CustomGradientPanel1.Controls.Add(this.dtp_DateTake);
-            this.guna2CustomGradientPanel1.Controls.Add(this.cmb_People);
             this.guna2CustomGradientPanel1.Controls.Add(this.cmb_Location);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.DarkBlue;
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.LightSkyBlue;
@@ -138,29 +138,6 @@
             this.dtp_DateTake.Size = new System.Drawing.Size(285, 39);
             this.dtp_DateTake.TabIndex = 1;
             this.dtp_DateTake.Value = new System.DateTime(2024, 2, 29, 21, 10, 0, 381);
-            // 
-            // cmb_People
-            // 
-            this.cmb_People.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_People.BorderRadius = 8;
-            this.cmb_People.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_People.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_People.FillColor = System.Drawing.SystemColors.HighlightText;
-            this.cmb_People.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmb_People.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmb_People.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmb_People.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmb_People.ItemHeight = 30;
-            this.cmb_People.Items.AddRange(new object[] {
-            "1 khách",
-            "2 khách ",
-            "3 khách ",
-            "4 khách ",
-            "5 khách "});
-            this.cmb_People.Location = new System.Drawing.Point(718, 18);
-            this.cmb_People.Name = "cmb_People";
-            this.cmb_People.Size = new System.Drawing.Size(285, 36);
-            this.cmb_People.TabIndex = 0;
             // 
             // cmb_Location
             // 
@@ -527,6 +504,22 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // dtp_DateBack
+            // 
+            this.dtp_DateBack.BackColor = System.Drawing.Color.Transparent;
+            this.dtp_DateBack.BorderRadius = 8;
+            this.dtp_DateBack.Checked = true;
+            this.dtp_DateBack.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dtp_DateBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_DateBack.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtp_DateBack.Location = new System.Drawing.Point(718, 18);
+            this.dtp_DateBack.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_DateBack.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_DateBack.Name = "dtp_DateBack";
+            this.dtp_DateBack.Size = new System.Drawing.Size(285, 39);
+            this.dtp_DateBack.TabIndex = 1;
+            this.dtp_DateBack.Value = new System.DateTime(2024, 2, 29, 21, 10, 0, 381);
+            // 
             // FSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -577,7 +570,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_PayInHotel;
         private System.Windows.Forms.Panel Panel_Hotel;
         private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
-        private Guna.UI2.WinForms.Guna2ComboBox cmb_People;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel Panel_Discount;
         private System.Windows.Forms.FlowLayoutPanel dragdownCon;
         private System.Windows.Forms.Panel panel1;
@@ -587,5 +579,6 @@
         private System.Windows.Forms.Button btn_ListTrans;
         private System.Windows.Forms.Button btn_OwnBook;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_DateBack;
     }
 }
