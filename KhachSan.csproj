@@ -56,6 +56,8 @@
     <Compile Include="Account\Modify.cs" />
     <Compile Include="Account\TaiKhoan.cs" />
     <Compile Include="ChatBoxDAO.cs" />
+    <Compile Include="Comment.cs" />
+    <Compile Include="CommentDAO.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +141,12 @@
     <Compile Include="PayDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RatingHotel.Designer.cs">
+      <DependentUpon>RatingHotel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Room.cs" />
     <Compile Include="RoomDAO.cs" />
     <Compile Include="Search.cs" />
@@ -159,6 +167,12 @@
     </Compile>
     <Compile Include="UC_Register.Designer.cs">
       <DependentUpon>UC_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UC_Comment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_Comment.Designer.cs">
+      <DependentUpon>UC_Comment.cs</DependentUpon>
     </Compile>
     <Compile Include="User Control\UC_DetailHotel.cs">
       <SubType>UserControl</SubType>
@@ -236,6 +250,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RatingHotel.resx">
+      <DependentUpon>RatingHotel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="test.resx">
       <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Register.resx">
       <DependentUpon>UC_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_Comment.resx">
+      <DependentUpon>UC_Comment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_DetailHotel.resx">
       <DependentUpon>UC_DetailHotel.cs</DependentUpon>

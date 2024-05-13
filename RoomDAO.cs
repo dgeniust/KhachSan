@@ -12,7 +12,7 @@ namespace KhachSan
     public class RoomDAO
     {
         DBConnection db = new DBConnection();
-        ItemDAO itemDAO = new ItemDAO();    
+        ItemDAO itemDAO = new ItemDAO();
         public void Add(Room room)
         {
             string thongbao = $"Thêm phòng {room.name} thành công";
@@ -23,8 +23,9 @@ namespace KhachSan
         {
             itemDAO.GeneratePicture(imageLocation, pictureBoxes);
         }
-        public void GeneratePanel(string query, Panel storage_panel, Search sr)
+        public void GeneratePanel(string value, Panel storage_panel, Search sr, string tentk)
         {
+            string query = "SELECT * FROM PHONG WHERE TenKhachSan= '" + value + "'";
             storage_panel.Controls.Clear();
             DataTable dt = new DataTable();
             dt = db.LoadData(query);
@@ -41,7 +42,7 @@ namespace KhachSan
                 Room room = new Room(dr);
 
                 x += 345;
-                UC_DetailHotel dtht = new UC_DetailHotel(room, sr);
+                UC_DetailHotel dtht = new UC_DetailHotel(room, sr, tentk);
                 panel.Controls.Add(dtht);
                 dtht.Dock = DockStyle.Fill;
                 storage_panel.Controls.Add(panel);

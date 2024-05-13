@@ -20,12 +20,11 @@ namespace KhachSan
         public void Add(DatPhong dt)
         {
             string thongbao = $"Đặt phòng {dt.roomname} khách sạn {dt.hotelname} thành công";
-            string query = string.Format("INSERT INTO DATPHONG VALUES(N'{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}',N'{10}','{11}')", dt.hoten, dt.email, dt.sdt, dt.hotelname, dt.roomname, dt.price, dt.ngaynhan, dt.ngaytra, dt.sodem,dt.guest, dt.giuong,dt.image);
+            string query = string.Format("INSERT INTO DATPHONG VALUES(N'{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}',N'{10}','{11}','{12}')", dt.hoten, dt.email, dt.sdt, dt.hotelname, dt.roomname, dt.price, dt.ngaynhan, dt.ngaytra, dt.sodem,dt.guest, dt.giuong,dt.image, dt.tentk);
             db.ThucThi(query, thongbao);
         }
-        public void Delete(DatPhong dt)
+        public void Delete(DatPhong dt, string thongbao)
         {
-            string thongbao = $"Hủy phòng {dt.roomname} khách sạn {dt.hotelname} thành công";
             string query = string.Format("DELETE FROM DATPHONG WHERE TenKhachSan = '{0}' AND Email='{1}'", dt.hotelname,dt.email);
             db.ThucThi(query, thongbao);
         }

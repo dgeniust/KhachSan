@@ -32,11 +32,8 @@ namespace KhachSan
         }
         private void FSearch_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + search.address + "'";
-            /*string query = "SELECT * FROM KHACHSAN ";*/
-            htDAO.GeneratePanel(query, Panel_Hotel, search);
-            string disc = "Select * from MaGiamGia";
-            dcD.GenerateDiscountPanel(disc, Panel_Discount,tentk);
+            htDAO.GeneratePanelHotel(search.address, Panel_Hotel, search, tentk);
+            dcD.GenerateDiscountPanel(Panel_Discount,tentk);
             this.cmb_Location.Text = search.address;
             this.dtp_DateTake.Value = search.startday;
             this.dtp_DateBack.Value = search.endday;
@@ -49,8 +46,7 @@ namespace KhachSan
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM KHACHSAN WHERE DIACHI = '" + cmb_Location.Text + "'";
-            htDAO.GeneratePanel(query, Panel_Hotel, search);
+            htDAO.GeneratePanelHotel(cmb_Location.Text, Panel_Hotel, search, tentk);
             search.startday = dtp_DateTake.Value.Date;
             search.endday = dtp_DateBack.Value.Date;
             var start = dtp_DateTake.Value.Day;
@@ -61,14 +57,12 @@ namespace KhachSan
 
         private void btn_SaleBirthday_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM KHACHSAN WHERE UUDAI = N'Sale sinh nhật'";
-            htDAO.GeneratePanel(query, Panel_Hotel, search);
+            htDAO.GeneratePanelDiscount("Sale sinh nhật", Panel_Hotel, search, tentk);
         }
 
         private void btn_SpecialDiscount_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM KHACHSAN WHERE UUDAI = N'Ưu đãi đặc biệt'";
-            htDAO.GeneratePanel(query, Panel_Hotel, search);
+            htDAO.GeneratePanelDiscount("Ưu đãi đặc biệt", Panel_Hotel, search, tentk);
         }
 
         private void btn_All_Click(object sender, EventArgs e)

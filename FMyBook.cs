@@ -15,7 +15,6 @@ namespace KhachSan
     public partial class FMyBook : Form
     {
         DatPhong dp;
-        //TaiKhoan tk;
         DatPhongDAO dpDAO = new DatPhongDAO();
         ItemDAO itemDAO = new ItemDAO();
         string query = "";

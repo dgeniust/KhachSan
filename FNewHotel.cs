@@ -19,18 +19,10 @@ namespace KhachSan
         DBConnection db = new DBConnection();
         private List<PictureBox> pictureBoxes = new List<PictureBox>();
         HotelDAO htDAO = new HotelDAO();
+        string imageLocation = "";
         TaiKhoan tk;
-        int id = 6;
+        int id = 10;
         public Guna2TextBox TXT_HotelName => txt_HotelName;
-        public FNewHotel()
-        {
-            InitializeComponent();
-        }
-        /*public FNewHotel(TaiKhoan TK)
-        {
-            InitializeComponent();
-            this.tk = TK;
-        }*/
         public FNewHotel(TaiKhoan TK)
         {
             InitializeComponent();
@@ -57,7 +49,6 @@ namespace KhachSan
             }
 
         }
-        string imageLocation = "";
         private void btn_UploadImage_Click(object sender, EventArgs e)
         {
             pictureBoxes.Add(pictureBox1);
@@ -101,7 +92,7 @@ namespace KhachSan
                 htDAO.Add(hotel);
                 id++;
 
-                FAddRoom far = new FAddRoom(hotel);
+                FAddRoom far = new FAddRoom(hotel, tk.taikhoan);
                 far.Show();
                 this.Hide();
             }

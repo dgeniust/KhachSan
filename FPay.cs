@@ -19,20 +19,22 @@ namespace KhachSan
         Room room;
         DatPhong dp;
         int result;
+        string tentk;
         public FPay()
         {
             InitializeComponent();
         }
 
-        public FPay(Room ROOM, Search search)
+        public FPay(Room ROOM, Search search, string TENTK)
         {
             InitializeComponent();
             this.room = ROOM;
             this.search = search;
+            this.tentk = TENTK;
         }
         private void btn_Pay_Click(object sender, EventArgs e)
         {
-            DatPhong datphong = new DatPhong(txt_Name_Guest.Text, txt_Email_Guest.Text, txt_Phone_Guest.Text,room.hotelname, room.name, room.price, search.startday, search.endday, search.spendnight,search.guest, room.bed, room.p1);
+            DatPhong datphong = new DatPhong(txt_Name_Guest.Text, txt_Email_Guest.Text, txt_Phone_Guest.Text,room.hotelname, room.name, room.price, search.startday, search.endday, search.spendnight,search.guest, room.bed, room.p1,tentk);
             dpDao.Add(datphong);
             this.dp = datphong;
             string query = string.Format("SELECT * FROM DATPHONG WHERE Email='" + dp.email + "'");
@@ -42,14 +44,10 @@ namespace KhachSan
             this.Hide();
             dpDao.SendEmail(room,search, dp.email);
 
-            FSuccess fcc = new FSuccess();
-            fcc.ShowDialog();
-            this.Hide();
         }
         private void Pay_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM PHONG WHERE TENPHONG ='" + room.name + "'";
-            pd.GeneratePayPanel(query, Panel_DetailHotelPay, search);
+            pd.GeneratePayPanel(room.name, Panel_DetailHotelPay, search);
             this.lbl_Pay_Price.Text = room.price + " VND";
             result = Convert.ToInt32(room.price) + 31905;
             this.lbl_Pay_Total.Text = Convert.ToString(result) + " VND";
@@ -63,7 +61,6 @@ namespace KhachSan
         private void btn_ApplyCode_Click(object sender, EventArgs e)
         {
             int ketquacuoicung = result - pd.CheckDiscountCode(txt_MaGG.Text, result);
-            //MessageBox.Show(ketquacuoicung.ToString());
             if (ketquacuoicung != result)
             {
                 MessageBox.Show("Bạn đã áp dụng mã " + txt_MaGG.Text + " thành công. Số tiền được giảm là: " + pd.CheckDiscountCode(txt_MaGG.Text, result) + " VND");

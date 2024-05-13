@@ -12,8 +12,9 @@ namespace KhachSan
     public class PayDAO
     {
         DBConnection db = new DBConnection();
-        public void GeneratePayPanel(string query, Panel panel, Search search)
+        public void GeneratePayPanel(string value, Panel panel, Search search)
         {
+            string query = "SELECT * FROM PHONG WHERE TENPHONG ='" + value + "'";
             panel.Controls.Clear();
             DataTable dt = new DataTable();
             dt = db.LoadData(query);

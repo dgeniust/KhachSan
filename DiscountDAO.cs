@@ -12,8 +12,9 @@ namespace KhachSan
     public class DiscountDAO
     {
         DBConnection db = new DBConnection();
-        public void GenerateDiscountPanel(string query, Panel storage_panel, string tentk)
+        public void GenerateDiscountPanel( Panel storage_panel, string tentk)
         {
+            string query = "Select * from MaGiamGia";
             storage_panel.Controls.Clear();
             DataTable dt = new DataTable();
             dt = db.LoadData(query);

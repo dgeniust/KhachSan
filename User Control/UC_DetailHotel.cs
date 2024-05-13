@@ -16,12 +16,14 @@ namespace KhachSan.User_Control
         Room room;
         Search search;
         HotelDAO htDAO = new HotelDAO();
+        DBConnection db = new DBConnection();
+        string tentk;
         public UC_DetailHotel()
         {
             InitializeComponent();
         }
         
-        public UC_DetailHotel(Room ROOM, Search search)
+        public UC_DetailHotel(Room ROOM, Search search, string TENTK)
         {
             InitializeComponent();
             this.room = ROOM;
@@ -43,12 +45,32 @@ namespace KhachSan.User_Control
             this.pictureBox4.Image = htDAO.LoadImageFromFile(ROOM.p4);
             this.lbl_OldPrice.Text = "Giá cũ: "+ ROOM.oldprice.ToString()+" VND";
             this.search = search;
+            this.tentk = TENTK;
         }
 
         private void btn_BookNow_Click(object sender, EventArgs e)
         {
-            FPay pay = new FPay(room,search);
-            pay.Show();
+            string query = "Select * from datphong where tentk='" + tentk + "'";
+            DataTable dt = new DataTable();
+            int s = 0;
+            dt = db.LoadData(query);
+            foreach (DataRow dr in dt.Rows)
+            {
+                DatPhong dp = new DatPhong(dr);
+                if (dp.roomname == room.name || dp.ngaynhan == search.startday || dp.ngaytra == search.endday)
+                {
+                    s++;
+                }
+            }
+            if(s > 0)
+            {
+                MessageBox.Show($"Bạn đã đặt phòng này vào ngày " + search.startday + " rồi");
+            }
+            else
+            {
+                FPay pay = new FPay(room, search, tentk);
+                pay.Show();
+            }
         }
     }
 }

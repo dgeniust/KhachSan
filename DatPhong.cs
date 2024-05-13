@@ -21,8 +21,9 @@ namespace KhachSan
         public int guest;
         public string giuong;
         public string image;
+        public string tentk;
 
-        public DatPhong(string hoten, string email, string sdt, string hotelname, string roomname, double price, DateTime ngaynhan, DateTime ngaytra, int sodem,int guest, string giuong, string image)
+        public DatPhong(string hoten, string email, string sdt, string hotelname, string roomname, double price, DateTime ngaynhan, DateTime ngaytra, int sodem, int guest, string giuong, string image, string tentk)
         {
             this.hoten = hoten;
             this.email = email;
@@ -36,6 +37,7 @@ namespace KhachSan
             this.guest = guest;
             this.giuong = giuong;
             this.image = image;
+            this.tentk = tentk;
         }
         public DatPhong(DataRow dr)
         {
@@ -50,7 +52,8 @@ namespace KhachSan
             this.sodem = Convert.ToInt32(dr[8].ToString());
             this.guest = Convert.ToInt32(dr[9].ToString());
             this.giuong = dr[10].ToString(); 
-            this.image = dr[11].ToString(); 
+            this.image = dr[11].ToString();
+            this.tentk = dr[12].ToString();
         }
     }
 }

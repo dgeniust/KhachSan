@@ -17,18 +17,21 @@ namespace KhachSan
         DBConnection db = new DBConnection();
         Hotel ht;
         Search sr;
+        string tentk;
         HotelDAO htDAO = new HotelDAO();
         RoomDAO roomDAO = new RoomDAO();
+        CommentDAO commentDAO = new CommentDAO();
         public DetailHotel()
         {
             InitializeComponent();
         }
     
-        public DetailHotel(Hotel HOTEL, Search SEARCH)
+        public DetailHotel(Hotel HOTEL, Search SEARCH, string tentk)
         {
             InitializeComponent();
             this.ht = HOTEL;
             this.sr = SEARCH;
+            this.tentk = tentk;
         }
         private void DetailHotel_Load(object sender, EventArgs e)
         {
@@ -44,30 +47,9 @@ namespace KhachSan
             this.pictureBox5.Image = htDAO.LoadImageFromFile(ht.p5);
             this.pictureBox6.Image = htDAO.LoadImageFromFile(ht.p6);
 
-            /*Panel_EachRoom.Controls.Clear();
-            string query = "SELECT * FROM PHONG WHERE TenKhachSan= '" + ht.name + "'";
-            DataTable dt = new DataTable();
-            dt = db.LoadData(query);
-            int x = 0;
-            foreach(DataRow dr in dt.Rows)
-            {
-                Panel panel = new Panel
-                {
-                    Size = new Size(963, 340),
-                    Location = new Point(0, x),
-                    BorderStyle = BorderStyle.FixedSingle
-                };
+            roomDAO.GeneratePanel(ht.name, Panel_EachRoom,sr,tentk);
 
-                Room room = new Room(dr);
-
-                x += 345;
-                UC_DetailHotel dtht = new UC_DetailHotel(room,sr);
-                panel.Controls.Add(dtht);
-                dtht.Dock = DockStyle.Fill;
-                Panel_EachRoom.Controls.Add(panel);
-            }*/
-            string query = "SELECT * FROM PHONG WHERE TenKhachSan= '" + ht.name + "'";
-            roomDAO.GeneratePanel(query,Panel_EachRoom,sr);
+            commentDAO.GenerateComment(Panel_Comment, ht.name);
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)

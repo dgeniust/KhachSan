@@ -17,13 +17,15 @@ namespace KhachSan.User_Control
     {
         Hotel ht;
         Search search;
+        DBConnection db = new DBConnection();
         HotelDAO htDAO = new HotelDAO();
+        string tentk;
         public UC_Hotel()
         {
             InitializeComponent();
         }
 
-        public UC_Hotel(Hotel HOTEL, Search search)
+        public UC_Hotel(Hotel HOTEL, Search search, string TENTK)
         {
             InitializeComponent();
             this.ht = HOTEL;
@@ -36,6 +38,7 @@ namespace KhachSan.User_Control
             this.btn_TypeOf.Text = HOTEL.type;
             this.pictureBox_Hotel.Image = htDAO.LoadImageFromFile(HOTEL.picture);
             this.search = search;
+            this.tentk = TENTK;
             if (HOTEL.uudai == "Sale sinh nhật")
             {
                 this.btn_Edition.Text = "Sale sinh nhật";
@@ -51,8 +54,8 @@ namespace KhachSan.User_Control
         }
         private void btn_ChooseRoom_Click(object sender, EventArgs e)
         {
-            DetailHotel dh = new DetailHotel(ht, search);
-            dh.Show();
+                DetailHotel dh = new DetailHotel(ht, search, tentk);
+                dh.Show();
         }
 
         public void UC_Hotel_Click(object sender, EventArgs e)

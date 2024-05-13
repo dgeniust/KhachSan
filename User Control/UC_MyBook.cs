@@ -37,11 +37,23 @@ namespace KhachSan.User_Control
 
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
-            DatPhong dphong = new DatPhong(dp.hoten, dp.email, dp.sdt,dp.hotelname, dp.roomname, dp.price, dp.ngaynhan, dp.ngaytra, dp.sodem, dp.guest, dp.giuong, dp.image);
-            dpDAO.Delete(dphong);
+            string thongbao = $"Hủy phòng {dp.roomname} tại khách sạn {dp.hotelname} thành công";
+            DatPhong dphong = new DatPhong(dp.hoten, dp.email, dp.sdt,dp.hotelname, dp.roomname, dp.price, dp.ngaynhan, dp.ngaytra, dp.sodem, dp.guest, dp.giuong, dp.image,dp.tentk);
+            dpDAO.Delete(dphong,thongbao);
             MessageBox.Show("Phòng của bạn sẽ đc hủy trong 24h tới");
             this.btn_Cancel.FillColor = Color.DimGray;
             this.btn_Cancel.Text = "Đang hủy";
+        }
+
+        private void btn_ThanhToan_Click(object sender, EventArgs e)
+        {
+            string thongbao = $"Thanh toán phòng {dp.roomname} tại khách sạn {dp.hotelname} thành công";
+            DatPhong dphong = new DatPhong(dp.hoten, dp.email, dp.sdt, dp.hotelname, dp.roomname, dp.price, dp.ngaynhan, dp.ngaytra, dp.sodem, dp.guest, dp.giuong, dp.image, dp.tentk);
+            dpDAO.Delete(dphong,thongbao);
+            RatingHotel rh = new RatingHotel(dp);
+            rh.Show();
+            this.btn_ThanhToan.FillColor = Color.DimGray;
+            this.btn_Cancel.Enabled = false;
         }
     }
 }

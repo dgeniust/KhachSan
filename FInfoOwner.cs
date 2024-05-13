@@ -29,11 +29,7 @@ namespace KhachSan
             this.txt_Address.Text = TAIKHOAN.diachi;
             this.txt_CCCD.Text = TAIKHOAN.cccd;
             this.txt_Phone.Text = TAIKHOAN.sdt;
-            //this.datetime_NgaySinh.Value = Convert.ToDateTime(TAIKHOAN.ngaysinh);
             this.cmb_Gender.Text = TAIKHOAN.gioitinh;
-            /*this.pictureBox_OwnerImage.Image = htDAO.LoadImageFromFile(TAIKHOAN.ownerimage);
-            this.pictureBox_Front_CCCD.Image = htDAO.LoadImageFromFile(TAIKHOAN.frontcccd);
-            this.pictureBox_Back_CCCD.Image = htDAO.LoadImageFromFile(TAIKHOAN.backcccd);*/
 
         }
 
@@ -51,37 +47,24 @@ namespace KhachSan
             this.Hide();
             fnh.Show();
         }
-        public void TakeImage(PictureBox pb)
+        public void LoadImageFromFile(string filepath)
         {
-            try
-            {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(*.jpg)|*.jpg|PNG files(*.png)|*.png|All Files(*.*)|*.*";
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    imageLocation = dialog.FileName;
-                    pb.ImageLocation = imageLocation;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            htDAO.LoadImageFromFile(filepath);
         }
 
         private void btn_Upload_OwnerImage_Click(object sender, EventArgs e)
         {
-            TakeImage(pictureBox_OwnerImage);
+            LoadImageFromFile(pictureBox_OwnerImage.ImageLocation);
         }
 
         private void btn_Upload_FrontCCCD_Click(object sender, EventArgs e)
         {
-            TakeImage(pictureBox_Front_CCCD);
+            LoadImageFromFile(pictureBox_Front_CCCD.ImageLocation);
         }
 
         private void btn_Upload_BackCCCD_Click(object sender, EventArgs e)
         {
-            TakeImage(pictureBox_Back_CCCD);
+            LoadImageFromFile(pictureBox_Back_CCCD.ImageLocation);
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)

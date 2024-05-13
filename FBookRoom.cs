@@ -23,10 +23,7 @@ namespace KhachSan
         int p, k, people;
         int date, month, year;
         string endday = "";
-        public FBookRoom()
-        {
-            InitializeComponent();
-        }
+
         public FBookRoom(string TENTK)
         {
             InitializeComponent();
@@ -126,7 +123,6 @@ namespace KhachSan
             p = Convert.ToInt32(cmb_People.Text);
             k = Convert.ToInt32(cmb_Kid.Text);
             people = p + k;
-            //Search sr = new Search(datetimepicker_ReceiveRoom.Value.Date,Convert.ToInt32(cmb_Night.Text), cmb_Location.Text);
             Search sr = new Search(datetimepicker_ReceiveRoom.Value.Date,Convert.ToDateTime(endday), Convert.ToInt32(cmb_Night.Text), cmb_Location.Text, people, Convert.ToInt32(cmb_Room.Text));
             FSearch fs = new FSearch(sr,tentk);
             fs.Show();

@@ -35,6 +35,7 @@
             this.lbl_Info = new System.Windows.Forms.Label();
             this.btn_Cancel = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_DateReturn = new System.Windows.Forms.Label();
+            this.btn_ThanhToan = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Room)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +98,7 @@
             this.btn_Cancel.FillColor = System.Drawing.Color.Red;
             this.btn_Cancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.ForeColor = System.Drawing.Color.White;
-            this.btn_Cancel.Location = new System.Drawing.Point(848, 102);
+            this.btn_Cancel.Location = new System.Drawing.Point(880, 102);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(140, 36);
             this.btn_Cancel.TabIndex = 2;
@@ -114,10 +115,28 @@
             this.lbl_DateReturn.TabIndex = 1;
             this.lbl_DateReturn.Text = "Ngày trả";
             // 
+            // btn_ThanhToan
+            // 
+            this.btn_ThanhToan.BorderRadius = 5;
+            this.btn_ThanhToan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThanhToan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThanhToan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThanhToan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThanhToan.FillColor = System.Drawing.Color.RoyalBlue;
+            this.btn_ThanhToan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
+            this.btn_ThanhToan.Location = new System.Drawing.Point(710, 102);
+            this.btn_ThanhToan.Name = "btn_ThanhToan";
+            this.btn_ThanhToan.Size = new System.Drawing.Size(140, 36);
+            this.btn_ThanhToan.TabIndex = 3;
+            this.btn_ThanhToan.Text = "Thanh toán";
+            this.btn_ThanhToan.Click += new System.EventHandler(this.btn_ThanhToan_Click);
+            // 
             // UC_MyBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_ThanhToan);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.lbl_DateReturn);
             this.Controls.Add(this.lbl_DateReceive);
@@ -142,5 +161,6 @@
         private System.Windows.Forms.Label lbl_Info;
         private Guna.UI2.WinForms.Guna2Button btn_Cancel;
         private System.Windows.Forms.Label lbl_DateReturn;
+        private Guna.UI2.WinForms.Guna2Button btn_ThanhToan;
     }
 }

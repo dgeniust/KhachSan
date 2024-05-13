@@ -16,6 +16,7 @@ namespace KhachSan
         Hotel hotel;
         RoomDAO roomDAO = new RoomDAO();
         Search sr;
+        string tentk;
         private List<PictureBox> pictureBoxes = new List<PictureBox>(); 
         string imageLocation = "";
         public FAddRoom()
@@ -23,18 +24,18 @@ namespace KhachSan
             InitializeComponent();
 
         }
-        public FAddRoom(Hotel HOTEL)
+        public FAddRoom(Hotel HOTEL, string tentk)
         {
             InitializeComponent();
             this.hotel = HOTEL;
             this.txt_HotelName.Text = HOTEL.name;
+            this.tentk = tentk;
         }
         private void btn_AddRoom_Click(object sender, EventArgs e)
         {
             Room room = new Room(hotel.email,hotel.name,txt_RoomName.Text, txt_DienTich.Text, txt_Bed.Text, txt_Guest.Text,0, Convert.ToDouble(txt_Price.Text),txt_TienIch1.Text,txt_TienIch2.Text, txt_TienIch3.Text,txt_TienIch4.Text,txt_DoDung1.Text, txt_DoDung2.Text, pictureBox1.ImageLocation, pictureBox4.ImageLocation, pictureBox2.ImageLocation, pictureBox3.ImageLocation);
             roomDAO.Add(room);
-            string query = "SELECT * FROM PHONG WHERE TenKhachSan= '" + hotel.name + "'";
-            roomDAO.GeneratePanel(query, Panel_Hotel, sr);
+            roomDAO.GeneratePanel(hotel.name, Panel_Hotel, sr, tentk);
             this.Refresh();
         }
 
